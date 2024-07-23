@@ -1,0 +1,24 @@
+{
+  "name": "consen-react",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "isotope-layout": "^3.0.6",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-bootstrap": "^1.6.1",
+    "react-circular-progressbar": "^2.1.0",
+    "react-countup": "^6.4.1",
+    "react-dom": "18.2.0",
+    "react-visibility-sensor": "^5.1.1",
+    "swiper": "^9.0.4",
+    "wowjs": "^1.1.3"
+  }
+}
