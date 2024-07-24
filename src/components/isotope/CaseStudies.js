@@ -40,10 +40,10 @@ const CaseStudies = () => {
       <div className="row case-study-bg">
         <div className="col-lg-12">
           <div className="consen-section-title upper text-center pb-50">
-            <h5> Case Studies </h5>
-            <h2> We Server the Best Works </h2>
+            <h5> فایل ها </h5>
+            <h2> بهترین هارا برای شما به ارمغان میاوریم </h2>
             <h2>
-              View <span> Case Studies </span>
+              مشاهده <span> فایل ها  </span>
             </h2>
           </div>
         </div>

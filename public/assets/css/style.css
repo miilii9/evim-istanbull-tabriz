@@ -966,7 +966,7 @@ ul.sub-menu li:hover a span {
   text-align: end;
 }
 
-.consen-section-title h5:before {
+/* .consen-section-title h5:before {
   position: absolute;
   content: "";
   top: 10px;
@@ -974,7 +974,7 @@ ul.sub-menu li:hover a span {
   height: 2px;
   width: 41px;
   background: #ff3c00;
-}
+} */
 
 /*center before after*/
 .upper.consen-section-title h5 {
@@ -982,7 +982,7 @@ ul.sub-menu li:hover a span {
   margin-left: 0;
 }
 
-.upper.consen-section-title h5::before {
+/* .upper.consen-section-title h5::before {
   position: absolute;
   content: "";
   top: 10px;
@@ -991,7 +991,7 @@ ul.sub-menu li:hover a span {
   height: 2px;
   width: 41px;
   background: #ff3c00;
-}
+} */
 
 .upper.consen-section-title h5:after {
   position: absolute;
@@ -2059,6 +2059,7 @@ p.about-text2 {
 .style-three.about-area {
   background: #fff;
   padding: 0px 0 82px;
+  text-align: right;
 }
 
 /*upper style*/
@@ -2573,6 +2574,7 @@ p.about-text1 {
   background-size: cover;
   background-position: center;
   padding: 100px 0 100px;
+  text-align: right;
 }
 
 p.choose-text1 {
@@ -3668,6 +3670,9 @@ p.choose-text1 {
   height: 100%;
   background-color: rgba(15, 15, 30, 0.8);
 }
+.faq-area {
+  text-align: right;
+}
 
 /*accordion*/
 .accordion li {
@@ -3681,7 +3686,7 @@ p.choose-text1 {
   position: absolute;
   content: "";
   z-index: -1;
-  right: 20px;
+  left: 20px;
   top: 16px;
   width: 28px;
   height: 28px;
@@ -3724,7 +3729,7 @@ p.choose-text1 {
   height: 10px;
   background: #ff3c00;
   position: absolute;
-  right: 32px;
+  left: 32px;
   content: " ";
   top: 22px;
   transform: rotate(0deg);
@@ -3736,7 +3741,7 @@ p.choose-text1 {
   height: 2px;
   background: #ff3c00;
   position: absolute;
-  right: 28px;
+  left: 28px;
   content: " ";
   top: 26px;
   transition: all 0.2s ease-in-out;
@@ -4529,7 +4534,7 @@ h4.widget-title {
 h4.widget-title:before {
   position: absolute;
   content: "";
-  left: 0;
+  right: 0;
   top: 42px;
   background: #ff3c00;
   width: 50px;
@@ -4735,7 +4740,13 @@ a.logo_thumb img {
   background-size: cover;
   padding: 105px 0 0px;
 }
-
+.style-two.footer-middle * {
+  text-align: right;
+  direction: rtl;
+}
+.style-two.footer-middle .follow-company-icon a {
+  text-align: center !important;
+}
 .style-two .footer-bottom-area {
   background: transparent;
   height: 80px;

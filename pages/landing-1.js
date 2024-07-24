@@ -219,8 +219,8 @@ const Landing1 = () => {
                 </div>
               </div>
               {/* progress bar */}
-              <div className='progress-box d-flex flex-row-reverse align-items-center'>
-                <div className=''>
+              <div className='progress-box col-md-12 d-flex flex-row-reverse align-items-center'>
+                <div className='extra-progress col-md-6'>
                   <ProgressBar value={85} />
                   <div className='circle-progress-title'>
                     <h4>
@@ -229,7 +229,7 @@ const Landing1 = () => {
                     </h4>
                   </div>
                 </div>
-                <div className='extra-progress'>
+                <div className='extra-progress col-md-6'>
                   <ProgressBar value={95} />
                   <div className='circle-progress-title'>
                     <h4>
@@ -769,21 +769,20 @@ const Landing1 = () => {
           <div className='row align-items-center'>
             <div className='col-lg-7 col-md-6'>
               <div className='consen-section-title white pb-4 pb-lg-5'>
-                <h5> process </h5>
-                <h2> We follow some easy steps to </h2>
+                <h5> مسیر </h5>
+                <h2> قدم های آسان </h2>
                 <h2>
                   {" "}
-                  developed <span> Projects </span>
+                  برای <span> فروش </span>
                 </h2>
               </div>
             </div>
             <div className='col-lg-5 col-md-6'>
               <div className='process-text'>
                 <p>
-                  {" "}
-                  Monotonectally brand worldwide value before in seamless
-                  process Collaboratively initiate strategic expertise after
-                  functionalized and formulate based internal organic.{" "}
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است
                 </p>
               </div>
             </div>
@@ -808,10 +807,9 @@ const Landing1 = () => {
                   <img src='assets/images/resource/a.png' alt />
                 </div>
                 <div className='process-title'>
-                  <h3>Idea Generate</h3>
+                  <h3>ایجاد ایده</h3>
                   <p>
-                    Collaboratively initiate strategic ex formulate based
-                    internal.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
                   </p>
                 </div>
               </div>
@@ -822,10 +820,9 @@ const Landing1 = () => {
                   <img src='assets/images/resource/b.png' alt />
                 </div>
                 <div className='process-title'>
-                  <h3> System Design </h3>
+                  <h3> لورم ایپسوم </h3>
                   <p>
-                    Collaboratively initiate strategic ex formulate based
-                    internal.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
                   </p>
                 </div>
               </div>
@@ -836,10 +833,9 @@ const Landing1 = () => {
                   <img src='assets/images/resource/c.png' alt />
                 </div>
                 <div className='process-title'>
-                  <h3> Report Analysis </h3>
+                  <h3> لورم ایپسوم </h3>
                   <p>
-                    Collaboratively initiate strategic ex formulate based
-                    internal.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
                   </p>
                 </div>
               </div>
@@ -863,10 +859,10 @@ const Landing1 = () => {
           <div className='row'>
             <div className='col-lg-12'>
               <div className='consen-section-title upper text-center pb-60'>
-                <h5> Team Member </h5>
+                <h5> اعضای تیم </h5>
                 <h2>
                   {" "}
-                  Let’s Meet with Our <span> Experts </span>
+                  اشنایی با <span> کارشناسان ما </span>
                 </h2>
               </div>
             </div>
@@ -974,32 +970,18 @@ const Landing1 = () => {
       <div className='faq-area' id='contact'>
         <div className='container'>
           <div className='row'>
-            <div className='col-lg-6 col-md-6 pl-0'>
-              {/* Start Accordion */}
-              <div className='tab_container'>
-                <div className='consen-section-title white pb-40 mb-1'>
-                  <h5> FAQ </h5>
-                  <h2>
-                    {" "}
-                    Freequently Asked <span> Question </span>
-                  </h2>
-                </div>
-                <Faqs />
-              </div>
-              {/* End Accordion */}
-            </div>
             <div className='col-lg-6 col-md-6'>
               <div className='contract-form-bg'>
                 <div className='contact-form-title'>
-                  <h4> Free Consultant </h4>
-                  <p> 24/7 anytime Open Our Services </p>
+                  <h4> مشاوره رایگان </h4>
+                  <p> مشاوره 24/7 </p>
                 </div>
-                <div className='contact_from'>
+                <div className='contact_from' dir='rtl'>
                   <form onSubmit={(e) => e.preventDefault()} id='dreamit-form'>
                     <div className='row'>
                       <div className='col-lg-12'>
                         <div className='form_box mb-20'>
-                          <input type='text' name='name' placeholder='Name*' />
+                          <input type='text' name='name' placeholder='نام*' />
                         </div>
                       </div>
                       <div className='col-lg-12'>
@@ -1007,7 +989,7 @@ const Landing1 = () => {
                           <input
                             type='email'
                             name='email'
-                            placeholder='Your E-Mail*'
+                            placeholder='ایمیل*'
                           />
                         </div>
                       </div>
@@ -1016,7 +998,7 @@ const Landing1 = () => {
                           <input
                             type='text'
                             name='phone'
-                            placeholder='Phone Number'
+                            placeholder='شماره تلفن'
                           />
                         </div>
                       </div>
@@ -1027,14 +1009,14 @@ const Landing1 = () => {
                             id='message'
                             cols={30}
                             rows={10}
-                            placeholder='Write a Message'
+                            placeholder='متن شما'
                             defaultValue={""}
                           />
                         </div>
                         <div className='quote_button'>
                           <button className='btn' type='submit'>
                             {" "}
-                            <i className='bi bi-gear' /> Free Consultant{" "}
+                            مشاوره رایگان <i className='bi bi-gear' />
                           </button>
                         </div>
                       </div>
@@ -1044,6 +1026,21 @@ const Landing1 = () => {
                 </div>
               </div>
             </div>
+            <div className='col-lg-6 col-md-6 pl-0'>
+              {/* Start Accordion */}
+              <div className='tab_container'>
+                <div className='consen-section-title white pb-40 mb-1'>
+                  <h5> FAQ </h5>
+                  <h2>
+                    {" "}
+                    سوالات <span> متداول </span>
+                  </h2>
+                </div>
+                <Faqs />
+              </div>
+              {/* End Accordion */}
+            </div>
+
             <div className='form-shape'>
               <div className='testi-shape-thumb'>
                 <img src='assets/images/resource/all-shape5.png' alt />
@@ -1061,23 +1058,23 @@ const Landing1 = () => {
       <div className='blog-area style-two' id='blog'>
         <div className='container'>
           <div className='row pb-40'>
-            <div className='col-lg-7 col-md-6'>
-              <div className='consen-section-title mobile-center'>
-                <h2> We Run All Kinds Of Services </h2>
-                <h2>
-                  {" "}
-                  From <span> Technologies </span>
-                </h2>
-              </div>
-            </div>
             <div className='col-lg-5 col-md-6'>
               <div className='consen-button text-right pt-4 pt-md-0'>
                 <Link legacyBehavior href='/blog-grid'>
                   <a>
                     {" "}
-                    <i className='bi bi-gear' /> View all Blog{" "}
+                    <i className='bi bi-gear' /> همه بلاگ ها
                   </a>
                 </Link>
+              </div>
+            </div>
+            <div className='col-lg-7 col-md-6'>
+              <div className='consen-section-title mobile-center'>
+                <h2> تمامی خدمات مجموعه ما </h2>
+                <h2>
+                  {" "}
+                  از <span> فروش ملک </span>
+                </h2>
               </div>
             </div>
           </div>
@@ -1217,18 +1214,18 @@ const Landing1 = () => {
         <div className='container'>
           <div className='subscribe'>
             <div className='row align-items-center'>
-              <div className='col-lg-4 col-md-12'>
-                <div className='subscribe-title'>
-                  <h1>Get your Free Business Consolution</h1>
+              <div className='col-lg-8 col-md-12 d-flex justify-content-between'>
+                <div className='subscribe-title2'>
+                  <h1> +989020008804 </h1>
+                  <p> amirisalar29@gmail.com </p>
                 </div>
-              </div>
-              <div className='col-lg-8 col-md-12'>
-                <a href='tel:09837393403' className='subscribe-icon'>
+                <a href='tel:989020008804' className='subscribe-icon'>
                   <i className='bi bi-telephone-inbound' />
                 </a>
-                <div className='subscribe-title2'>
-                  <h1> +98 376 (2890) 100 </h1>
-                  <p> example@gmail.com </p>
+              </div>
+              <div className='col-lg-4 col-md-12'>
+                <div className='subscribe-title'>
+                  <h1>مشاوره رایگان دریافت کنید</h1>
                 </div>
               </div>
             </div>
