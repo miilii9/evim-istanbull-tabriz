@@ -69,7 +69,7 @@ const LandingHeader = () => {
                     <img
                       src='assets/images/evim-logo.png'
                       alt='logo'
-                      style={{ width: "80px" }}
+                      style={{ width: "60px" }}
                     />
                   </a>
                 </Link>
@@ -78,7 +78,7 @@ const LandingHeader = () => {
                     <img
                       src='assets/images/evim-logo.png'
                       alt='logo'
-                      style={{ width: "80px" }}
+                      style={{ width: "80px " }}
                     />
                   </a>
                 </Link>
@@ -91,14 +91,18 @@ const LandingHeader = () => {
                     <a href='#home'>خانه</a>
                   </li>
                   <li>
-                    <a href='#about'>درباره ما</a>
+                    <Link legacyBehavior href='about'>
+                      <a href='#about'>درباره ما</a>
+                    </Link>
                   </li>
 
                   {/* <li>
                     <a href='#blog'>Blog</a>
                   </li> */}
                   <li>
-                    <a href='#contact'>ارتباط با ما</a>
+                    <Link legacyBehavior href='contact'>
+                      <a href='/contact'>ارتباط با ما</a>
+                    </Link>
                   </li>
                 </ul>
                 <div className=' d-flex align-items-center'>
