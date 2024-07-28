@@ -20,7 +20,6 @@ export default function FormComponent() {
       .regex(/^09[0-9][0-9]-?[0-9]{3}-?[0-9]{4}$/, {
         message: "شماره تلفن صحیح نیست",
       }),
-    email: z.string(),
     // email: z.string().email("ایمیل نادرست است."),
     body: z.string(),
   });
@@ -34,7 +33,13 @@ export default function FormComponent() {
 
   const submitHandler = async (data) => {
     setLoading(true);
-    await sendMessage(data)
+    const submitData = {
+      phone: data.phone,
+      fullName: data.fullName,
+      body: data.body,
+      email: "no email",
+    };
+    await sendMessage(submitData)
       .then((res) => {
         if (res.status === 200) {
           setLoading(false);
@@ -65,7 +70,7 @@ export default function FormComponent() {
                 />
               </div>
             </div>
-            <div className='col-lg-12'>
+            {/* <div className='col-lg-12'>
               <div className='form_box mb-20'>
                 <input
                   type='email'
@@ -74,7 +79,7 @@ export default function FormComponent() {
                   {...register("email")}
                 />
               </div>
-            </div>
+            </div> */}
             <div className='col-lg-12'>
               <div className='form_box mb-20'>
                 <input

@@ -11,28 +11,29 @@ const DefaultFooter = () => {
                 <div className='company-info-desc pr-2'>
                   <h4 className='widget-title'> درباره ما </h4>
                   <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                    تکنولوژی مورد نیاز
+                    شرکت مهاجرتی اویم استانبول ( evim istanbul group ) صفر تا صد
+                    شروع کار و زندگی و اقامت در استانبول ، مجری خرید و فروش واحد
+                    های مسکونی و تجاری و اداری در ترکیه استانبول، اخذ انواع
+                    اقامت بصورت تضمینی در ترکیه، اخذ چالیشما ایزنی (اجازه کار )
+                    بصورت تضمینی، خدمات صرافی و مترجمی و ترنسفر از فرودگاه،
+                    کاریابی با توجه به حرفه، اجاره واحد های مبله و خالی استانبول
+                    بصورت سالانه و کوتاه مدت
                   </p>
                 </div>
                 <div className='follow-company-icon'>
-                  <a className='social-icon-color' href='#'>
+                  <a
+                    target='_blank'
+                    className='social-icon-color'
+                    href='https://api.whatsapp.com/send?phone=905411852316'>
                     {" "}
-                    <i className='bi bi-facebook' />{" "}
+                    <i className='bi bi-whatsapp' />{" "}
                   </a>
-                  <a className='social-icon-color2' href='#'>
+                  <a
+                    target='_blank'
+                    className='social-icon-color2'
+                    href='https://www.instagram.com/evimistanbull.tab/'>
                     {" "}
                     <i className='bi bi-instagram'> </i>{" "}
-                  </a>
-                  <a className='social-icon-color1' href='#'>
-                    {" "}
-                    <i className='bi bi-twitter' />{" "}
-                  </a>
-                  <a className='social-icon-color3' href='#'>
-                    {" "}
-                    <i className='bi bi-youtube' />{" "}
                   </a>
                 </div>
               </div>
@@ -47,11 +48,11 @@ const DefaultFooter = () => {
                         خانه
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link legacyBehavior href='about'>
                         درباره ما
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link legacyBehavior href='contact'>
                         ارتباط با ما
@@ -166,8 +167,12 @@ const DefaultFooter = () => {
               <div className='footer-bottom-content'>
                 <div className='footer-bottom-content-copy'>
                   <p>
-                    © 2023 <span>evim-istanbull-tab</span> all rights reserved. Design By
-                   kalagh.
+                    all rights reserved by <b>evim-istanbull-tab ©</b> .
+                    Designed By{" "}
+                    <a href='https://calagh.ir/'>
+                      <span>Calagh</span>
+                    </a>
+                    .
                   </p>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
-const LandingHeader = () => {
+const LandingHeader = ({ popUpHandler }) => {
   const [toggle, setToggle] = useState(false);
   return (
     <Fragment>
@@ -24,23 +24,19 @@ const LandingHeader = () => {
                 <div className='header_top_menu_icon_inner'>
                   <ul>
                     <li>
-                      <a href='#'>
-                        <i className='bi bi-facebook' />
+                      <a
+                        className='social-icon-color2'
+                        href='https://api.whatsapp.com/send?phone=905411852316'>
+                        {" "}
+                        <i className='bi bi-whatsapp' />{" "}
                       </a>
                     </li>
                     <li className='menu-icon'>
-                      <a href='#'>
-                        <i className='bi bi-dribbble' />
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i className='bi bi-twitter' />
-                      </a>
-                    </li>
-                    <li className='menu-icon'>
-                      <a href='#'>
-                        <i className='bi bi-instagram' />
+                      <a
+                        className='social-icon-color'
+                        href='https://www.instagram.com/evimistanbull.tab/'>
+                        {" "}
+                        <i className='bi bi-instagram'> </i>{" "}
                       </a>
                     </li>
                   </ul>
@@ -88,13 +84,13 @@ const LandingHeader = () => {
               <nav className='consen_menu  d-flex align-items-center justify-content-between col-12'>
                 <ul className='nav_scroll col-8  d-flex align-items-center'>
                   <li>
-                    <a href='#home'>خانه</a>
+                    <a href='/'>خانه</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link legacyBehavior href='about'>
                       <a href='#about'>درباره ما</a>
                     </Link>
-                  </li>
+                  </li> */}
 
                   {/* <li>
                     <a href='#blog'>Blog</a>
@@ -113,10 +109,8 @@ const LandingHeader = () => {
                       </a>
                     </div>
                   </div>
-                  <div className='header-button'>
-                    <Link legacyBehavior href='contact'>
-                      درخواست مشاوره
-                    </Link>
+                  <div className='header-button' onClick={popUpHandler}>
+                    <Link href=''>درخواست مشاوره</Link>
                   </div>
                 </div>
               </nav>
@@ -194,14 +188,23 @@ const LandingHeader = () => {
                   </div>
                   {/* Social Box */}
                   <ul className='social-box'>
-                    <li className='facebook'>
-                      <a href='#' className='fab fa-whatsapp' />
-                    </li>
-                    <li className='twitter'>
+                    <li className=''>
                       <a
-                        href='@evimstanbull.tab'
-                        className='fab fa-instagram'
-                      />
+                        target='_blank'
+                        className='social-icon-color2'
+                        href='https://api.whatsapp.com/send?phone=905411852316'>
+                        {" "}
+                        <i className='bi bi-whatsapp' />{" "}
+                      </a>{" "}
+                    </li>
+                    <li className=''>
+                      <a
+                        target='_blank'
+                        className='social-icon-color'
+                        href='https://www.instagram.com/evimistanbull.tab/'>
+                        {" "}
+                        <i className='bi bi-instagram'> </i>{" "}
+                      </a>
                     </li>
                   </ul>
                 </div>

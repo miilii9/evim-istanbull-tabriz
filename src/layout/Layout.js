@@ -6,7 +6,7 @@ import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import MobileMenu from "./header/MobileMenu";
 import ScrollTop from "./ScrollTop";
-const Layout = ({ children, header, footer }) => {
+const Layout = ({ children, header, footer, popUpHandler }) => {
   useEffect(() => {
     animation();
     stickyNav();
@@ -16,7 +16,7 @@ const Layout = ({ children, header, footer }) => {
     <Fragment>
       <ImageView />
       <VideoPopup />
-      <Header header={header} />
+      <Header header={header} popUpHandler={popUpHandler} />
       <MobileMenu />
       {children}
       <Footer footer={footer} />

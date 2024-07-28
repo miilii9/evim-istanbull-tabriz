@@ -62,26 +62,22 @@ const CaseStudies = () => {
                 <li
                   className={`c-pointer ${activeBtn("*")}`}
                   onClick={handleFilterKeyChange("*")}>
-                  {" "}
-                  All items{" "}
+                  همه کشور ها
                 </li>
                 <li
-                  className={`c-pointer ${activeBtn("physics")}`}
-                  onClick={handleFilterKeyChange("physics")}>
-                  {" "}
-                  Stregy{" "}
+                  className={`c-pointer ${activeBtn("ترکیه")}`}
+                  onClick={handleFilterKeyChange("ترکیه")}>
+                  ترکیه
                 </li>
                 <li
-                  className={`c-pointer ${activeBtn("chemistry")}`}
-                  onClick={handleFilterKeyChange("chemistry")}>
-                  {" "}
-                  Ficulties{" "}
+                  className={`c-pointer ${activeBtn("قبرس")}`}
+                  onClick={handleFilterKeyChange("قبرس")}>
+                  امارات
                 </li>
                 <li
-                  className={`c-pointer ${activeBtn("math")}`}
-                  onClick={handleFilterKeyChange("math")}>
-                  {" "}
-                  Coaching{" "}
+                  className={`c-pointer ${activeBtn("امارات")}`}
+                  onClick={handleFilterKeyChange("امارات")}>
+                  قبرس
                 </li>
               </ul>
             </div>
@@ -89,33 +85,33 @@ const CaseStudies = () => {
         </div>
       </div>
       <div className='row image_load'>
-        <div className='col-lg-4 col-md-6 grid-item physics english'>
+        <div className='col-lg-4 col-md-6 grid-item ترکیه english'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/evinPark.jpeg' alt />
               {/* port icon */}
-              <div className='single_portfolio_icon'>
+              {/* <div className='single_portfolio_icon'>
                 <a
                   className='portfolio-icon venobox vbox-item'
                   data-gall='myportfolio'
                   href='assets/images/project/evinPark.jpeg'>
                   <i className='bi bi-card-image' />
                 </a>
-              </div>
+              </div> */}
               <div className='case-study-content'>
                 <div className='case-study-content-inner'>
                   <div className='case-study-title'>
-                    <h6> Consulting </h6>
+                    <h6> برای خرید </h6>
                     <h3>
                       {" "}
-                      <Link legacyBehavior href='/portfolio-details'>
-                        <a> Consulting for Business Organizations</a>
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
                       </Link>{" "}
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className='video-icon style-two'>
+              {/* <div className='video-icon style-two'>
                 <a
                   className='video-vemo-icon venobox vbox-item'
                   data-vbtype='youtube'
@@ -123,37 +119,37 @@ const CaseStudies = () => {
                   href='https://youtu.be/BS4TUd7FJSg'>
                   <i className='fa fa-play' />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item physics chemistry math'>
+        <div className='col-lg-4 col-md-6 grid-item ترکیه قبرس امارات'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/kuru.webp' alt />
               {/* port icon */}
-              <div className='single_portfolio_icon'>
+              {/* <div className='single_portfolio_icon'>
                 <a
                   className='portfolio-icon venobox vbox-item'
                   data-gall='myportfolio'
                   href='assets/images/project/kuru.webp'>
                   <i className='bi bi-card-image' />
                 </a>
-              </div>
+              </div> */}
               <div className='case-study-content'>
                 <div className='case-study-content-inner'>
                   <div className='case-study-title'>
-                    <h6> Consulting </h6>
+                    <h6> برای خرید </h6>
                     <h3>
                       {" "}
-                      <Link legacyBehavior href='/portfolio-details'>
-                        <a> Consulting for Business Organizations</a>
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
                       </Link>{" "}
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className='video-icon style-two'>
+              {/* <div className='video-icon style-two'>
                 <a
                   className='video-vemo-icon venobox vbox-item'
                   data-vbtype='youtube'
@@ -161,37 +157,37 @@ const CaseStudies = () => {
                   href='https://youtu.be/BS4TUd7FJSg'>
                   <i className='fa fa-play' />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item chemistry english'>
+        <div className='col-lg-4 col-md-6 grid-item قبرس english'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/maslak.jpg' alt />
               {/* port icon */}
-              <div className='single_portfolio_icon'>
+              {/* <div className='single_portfolio_icon'>
                 <a
                   className='portfolio-icon venobox vbox-item'
                   data-gall='myportfolio'
                   href='assets/images/project/maslak.jpg'>
                   <i className='bi bi-card-image' />
                 </a>
-              </div>
+              </div> */}
               <div className='case-study-content'>
                 <div className='case-study-content-inner'>
                   <div className='case-study-title'>
-                    <h6> Consulting </h6>
+                    <h6> برای خرید </h6>
                     <h3>
                       {" "}
-                      <Link legacyBehavior href='/portfolio-details'>
-                        <a> Consulting for Business Organizations</a>
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
                       </Link>{" "}
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className='video-icon style-two'>
+              {/* <div className='video-icon style-two'>
                 <a
                   className='video-vemo-icon venobox vbox-item'
                   data-vbtype='youtube'
@@ -199,37 +195,37 @@ const CaseStudies = () => {
                   href='https://youtu.be/BS4TUd7FJSg'>
                   <i className='fa fa-play' />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item math english'>
+        <div className='col-lg-4 col-md-6 grid-item امارات english'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/nidapark.jpeg' alt />
               {/* port icon */}
-              <div className='single_portfolio_icon'>
+              {/* <div className='single_portfolio_icon'>
                 <a
                   className='portfolio-icon venobox vbox-item'
                   data-gall='myportfolio'
                   href='assets/images/project/nidapark.jpeg'>
                   <i className='bi bi-card-image' />
                 </a>
-              </div>
+              </div> */}
               <div className='case-study-content'>
                 <div className='case-study-content-inner'>
                   <div className='case-study-title'>
-                    <h6> Consulting </h6>
+                    <h6> برای خرید </h6>
                     <h3>
                       {" "}
-                      <Link legacyBehavior href='/portfolio-details'>
-                        <a> Consulting for Business Organizations</a>
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
                       </Link>{" "}
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className='video-icon style-two'>
+              {/* <div className='video-icon style-two'>
                 <a
                   className='video-vemo-icon venobox vbox-item'
                   data-vbtype='youtube'
@@ -237,37 +233,37 @@ const CaseStudies = () => {
                   href='https://youtu.be/BS4TUd7FJSg'>
                   <i className='fa fa-play' />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item math physics'>
+        <div className='col-lg-4 col-md-6 grid-item امارات ترکیه'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/vadi.webp' alt />
               {/* port icon */}
-              <div className='single_portfolio_icon'>
+              {/* <div className='single_portfolio_icon'>
                 <a
                   className='portfolio-icon venobox vbox-item'
                   data-gall='myportfolio'
                   href='assets/images/project/vadi.webp'>
                   <i className='bi bi-card-image' />
                 </a>
-              </div>
+              </div> */}
               <div className='case-study-content'>
                 <div className='case-study-content-inner'>
                   <div className='case-study-title'>
-                    <h6> Consulting </h6>
+                    <h6> برای خرید </h6>
                     <h3>
                       {" "}
-                      <Link legacyBehavior href='/portfolio-details'>
-                        <a> Consulting for Business Organizations</a>
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
                       </Link>{" "}
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className='video-icon style-two'>
+              {/* <div className='video-icon style-two'>
                 <a
                   className='video-vemo-icon venobox vbox-item'
                   data-vbtype='youtube'
@@ -275,37 +271,37 @@ const CaseStudies = () => {
                   href='https://youtu.be/BS4TUd7FJSg'>
                   <i className='fa fa-play' />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item chemistry physics'>
+        <div className='col-lg-4 col-md-6 grid-item قبرس ترکیه'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/yedi.jpg' alt />
               {/* port icon */}
-              <div className='single_portfolio_icon'>
+              {/* <div className='single_portfolio_icon'>
                 <a
                   className='portfolio-icon venobox vbox-item'
                   data-gall='myportfolio'
                   href='assets/images/project/yedi.jpg'>
                   <i className='bi bi-card-image' />
                 </a>
-              </div>
+              </div> */}
               <div className='case-study-content'>
                 <div className='case-study-content-inner'>
                   <div className='case-study-title'>
-                    <h6> Consulting </h6>
+                    <h6> برای خرید </h6>
                     <h3>
                       {" "}
-                      <Link legacyBehavior href='/portfolio-details'>
-                        <a> Consulting for Business Organizations</a>
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
                       </Link>{" "}
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className='video-icon style-two'>
+              {/* <div className='video-icon style-two'>
                 <a
                   className='video-vemo-icon venobox vbox-item'
                   data-vbtype='youtube'
@@ -313,7 +309,7 @@ const CaseStudies = () => {
                   href='https://youtu.be/BS4TUd7FJSg'>
                   <i className='fa fa-play' />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

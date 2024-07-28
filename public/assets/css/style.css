@@ -591,7 +591,7 @@ ul.sub-menu li:hover a span {
 }
 
 .slider-button a:hover {
-  color: #ff3b00;
+  color: #ff3b00 !important;
 }
 
 .slider-button a:hover:before {
@@ -766,6 +766,7 @@ ul.sub-menu li:hover a span {
 .slider2 .slider-button a {
   padding: 13px 40px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .slider2 .slider-button a i {
@@ -1398,7 +1399,7 @@ ul.sub-menu li:hover a span {
   color: #f4f4f4;
 }
 
-.service-bottom-text p a {
+.service-bottom-text p span {
   padding: 6px 25px;
   font-size: 15px;
   font-weight: 500;
@@ -1411,6 +1412,7 @@ ul.sub-menu li:hover a span {
   margin-left: 15px;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 .service-bottom-text p a:before {
@@ -4563,7 +4565,7 @@ h4.widget-title:before {
   height: 37px;
   line-height: 37px;
   text-align: center;
-  background: #187dff;
+  background: #40c351;
   border-radius: 50px;
   display: inline-block;
   color: #fff;
@@ -7607,4 +7609,7 @@ ul.social-box li a:hover {
 .loaded .loader {
   top: -100%;
   opacity: 0;
+}
+.dreamit-icon-list ul li{
+  gap: 0.3rem;
 }

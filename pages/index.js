@@ -18,7 +18,9 @@ const CaseStudies = dynamic(
 );
 const Landing1 = () => {
   const [popup, setPopup] = useState(false);
-
+  const popUpHandler = () => {
+    setPopup(true);
+  };
   useEffect(() => {
     setTimeout(() => {
       setPopup(true);
@@ -30,7 +32,7 @@ const Landing1 = () => {
 
       {popup && <Popup setPopup={setPopup} />}
 
-      <Layout header={4}>
+      <Layout header={4} popUpHandler={popUpHandler}>
         <div
           className='slider-area slider2 d-flex align-items-center'
           id='home'>
@@ -43,7 +45,7 @@ const Landing1 = () => {
                     {" "}
                     فروش <span>ملک</span>{" "}
                   </h1>
-                  <p>با 200 هزار دلار اقامت تریه را بگیرید </p>
+                  <p>با 200 هزار دلار اقامت ترکیه را بگیرید </p>
                 </div>
                 <div className='slider-button mt-5'>
                   <div
@@ -96,13 +98,12 @@ const Landing1 = () => {
                       <img src='assets/images/resource/main1.png' alt />
                     </div>
                     <div className='feature-title'>
-                      <h3> لورم</h3>
+                      <h3> تحصیل در خارج</h3>
                     </div>
                     <div className='feature-text'>
                       <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                        صنعت چاپ
+                        شرایط شرکت در آزمون ها، رشته ها و دانشگاه های معتبر خارج
+                        را از ما بپرسید تا بهترین تصمیم را بگیرید
                       </p>
                     </div>
                     <div className='feature-bar' />
@@ -126,13 +127,12 @@ const Landing1 = () => {
                       <img src='assets/images/resource/main3.png' alt />
                     </div>
                     <div className='feature-title'>
-                      <h3>لورم</h3>
+                      <h3>خرید ملک/ثبت شرکت در خارج</h3>
                     </div>
                     <div className='feature-text'>
                       <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                        صنعت چاپ
+                        با شرایط ثبت شرکت و یا خرید/اجاره ملک در خارج از کشور
+                        آشنا شوید. چه شرایطی در این مسیر وجود دارد؟
                       </p>
                     </div>
                     <div className='feature-bar' />
@@ -156,13 +156,12 @@ const Landing1 = () => {
                       <img src='assets/images/resource/main2.png' alt />
                     </div>
                     <div className='feature-title'>
-                      <h3> لورم</h3>
+                      <h3> کار در خارج</h3>
                     </div>
                     <div className='feature-text'>
                       <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                        صنعت چاپ
+                        با شرایط کار در خارج، انواع ویزاهای کاری و مشاغل
+                        مورد‌نیاز کشورها در این بخش آشنا شوید
                       </p>
                     </div>
                     <div className='feature-bar' />
@@ -213,11 +212,13 @@ const Landing1 = () => {
                   <h2> ما در اویم استانبول </h2>
                   <h2>
                     {" "}
-                    بیش از 2000+ <span> فایل </span> داریم
+                    بیش از <span> 10سال </span> تجربه داریم
                   </h2>
                   <p className='about-text1'>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است
+                    شرکت مهاجرتی اویم استانبول یک شرکت برجسته در زمینه ساخت,خرید
+                    و فروش ملک به صورت بدون واسطه در سه کشور ترکیه، قبرس و دبی
+                    می‌باشد. اویم استانبول با تکیه بر تجربه و تخصص تیم خود،
+                    توانسته است اعتماد و رضایت مشتریان خود را جلب کند
                   </p>
                 </div>
                 <div className='dreamit-icon-box'>
@@ -227,16 +228,15 @@ const Landing1 = () => {
                         <i className='bi bi-arrow-left-circle' />{" "}
                         <span>
                           {" "}
-                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                          چاپ
+                          پوشش گسترده جغرافیایی در 3 کشور ترکیه، قبرس و دبی
                         </span>
                       </li>
                       <li className='d-flex flex-row-reverse align-items-center'>
                         <i className='bi bi-arrow-left-circle' />{" "}
                         <span>
                           {" "}
-                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                          چاپ
+                          دارای دفاتر حضوری فروش و مشاوره در تبریز، کیش ، ترکیه
+                          و قبرس
                         </span>
                       </li>
                     </ul>
@@ -286,11 +286,9 @@ const Landing1 = () => {
             <div className='row d-flex flex-row-reverse'>
               <div className='col-lg-7 col-md-6 d-flex flex-row-reverse'>
                 <div className='consen-section-title white pb-50 mb-1'>
-                  <h5> ما چکار میکنیم ؟ </h5>
-                  <h2> همه جور خدمات اراِیه میدهیم</h2>
+                  <h5> ما چیکار میکنیم ؟ </h5>
                   <h2>
-                    {" "}
-                    درمورد <span> ملک </span>
+                    تمامی خدمات <span> خرید و فروش ملک </span>
                   </h2>
                 </div>
               </div>
@@ -303,16 +301,17 @@ const Landing1 = () => {
                       <img src='assets/images/resource/service-icon8.png' alt />
                     </div>
                     <div className='em-service-title'>
-                      <h3> لورم ایپسوم</h3>
+                      <h3> اخذ اجازه کار و کاریابی با بهترین شرایط</h3>
                     </div>
                     <div className='service-bar' />
                     <div className='em-service-text'>
                       <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ
+                        اخذ اجازه کار فرآیندی است که به فرد اجازه می‌دهد به طور
+                        قانونی در یک کشور خارجی مشغول به کار شود که مجموعه اویم
+                        استانبول این خدمات را ارائه میدهد
                       </p>
                     </div>
-                    <div className='service-button'>
+                    {/* <div className='service-button'>
                       <Link legacyBehavior href='/service-details'>
                         <a>
                           {" "}
@@ -320,7 +319,7 @@ const Landing1 = () => {
                           <i className='bi bi-plus' />{" "}
                         </a>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -331,16 +330,17 @@ const Landing1 = () => {
                       <img src='assets/images/resource/service-icon5.png' alt />
                     </div>
                     <div className='em-service-title'>
-                      <h3> لورم ایپسوم </h3>
+                      <h3> اجاره و فروش ملک در بهترین مناطق ترکیه </h3>
                     </div>
                     <div className='service-bar' />
                     <div className='em-service-text'>
                       <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ
+                        در زمینه های خرید و فروش، اجاره ملک در ترکیه ، قبرس و
+                        دبی که از روش‌های محبوب برای سرمایه‌گذاری و مهاجرت است ،
+                        خدمات ارائه میدهیم..
                       </p>
                     </div>
-                    <div className='service-button'>
+                    {/* <div className='service-button'>
                       <Link legacyBehavior href='/service-details'>
                         <a>
                           {" "}
@@ -348,7 +348,7 @@ const Landing1 = () => {
                           <i className='bi bi-plus' />{" "}
                         </a>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -359,16 +359,17 @@ const Landing1 = () => {
                       <img src='assets/images/resource/service-icon6.png' alt />
                     </div>
                     <div className='em-service-title'>
-                      <h3> لورم ایپسوم </h3>
+                      <h3>اخذ اقامت از طریق خرید ملک</h3>
                     </div>
                     <div className='service-bar' />
                     <div className='em-service-text'>
                       <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ
+                        تنها راه دریافت اقامت توریستی خرید ملک در یک کشور
+                        دیگه‌ست که مجموعه اویم استانبول این کار را جزو خدمات
+                        مجموعه ی خود قرار داده است..
                       </p>
                     </div>
-                    <div className='service-button'>
+                    {/* <div className='service-button'>
                       <Link legacyBehavior href='/service-details'>
                         <a>
                           {" "}
@@ -376,7 +377,7 @@ const Landing1 = () => {
                           <i className='bi bi-plus' />{" "}
                         </a>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -387,16 +388,17 @@ const Landing1 = () => {
                       <img src='assets/images/resource/service-icon7.png' alt />
                     </div>
                     <div className='em-service-title'>
-                      <h3> لورم ایپسوم </h3>
+                      <h3> اخذ اقامت دائم از طریق خرید ملک</h3>
                     </div>
                     <div className='service-bar' />
                     <div className='em-service-text'>
                       <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ
+                        اخذ اقامت دائم از طریق خرید ملک در این کشورها گزینه‌ای
+                        جذاب برای سرمایه‌گذاران است که مجموعه اویم استانبول با
+                        فرآیندی سریع و مزایای متعدد به شما در این راه کمک میکند
                       </p>
                     </div>
-                    <div className='service-button'>
+                    {/* <div className='service-button'>
                       <Link legacyBehavior href='/service-details'>
                         <a>
                           {" "}
@@ -404,17 +406,17 @@ const Landing1 = () => {
                           <i className='bi bi-plus' />{" "}
                         </a>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
               <div className='col-lg-12'>
                 <div className='service-bottom-text'>
                   <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                    <Link legacyBehavior href='/service'>
-                      <a>مشاوره رایگان</a>
-                    </Link>
+                    جهت مشاوره با کارشناسان ما با ما تماس بگیرید.
+                    <span legacyBehavior href='' onClick={popUpHandler}>
+                      مشاوره رایگان
+                    </span>
                   </p>
                 </div>
               </div>
@@ -439,48 +441,36 @@ const Landing1 = () => {
               <div className='col-lg-6'>
                 <div className='consen-section-title'>
                   <h5> چرا ما ؟ </h5>
-                  <h2> شریع ترین و مطمین ترین راه </h2>
+                  <h2> سریع ترین و مطمئن ترین راه </h2>
                   <h2>
                     {" "}
-                    برای خرید و شهروندی <span> در ترکیه </span>
+                    برای خرید ملک و شهروندی <span> در ترکیه </span>
                   </h2>
                   <p className='choose-text1'>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است
+                    شرکت مهاجرتی اویم استانبول یک شرکت برجسته در زمینه ساخت و
+                    فروش ملک به صورت بدون واسطه در سه کشور ترکیه، قبرس و دبی
+                    می‌باشد.
                   </p>
                 </div>
                 <div className='dreamit-icon-list'>
                   <ul>
                     <li className='d-flex flex-row-reverse'>
                       <i className='bi bi-arrow-left-circle' />{" "}
-                      <span>
-                        {" "}
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ{" "}
-                      </span>
+                      <span>ارائه خدمات مهاجرتی بصورت تضمینی</span>
                     </li>
                     <li className='d-flex flex-row-reverse'>
                       <i className='bi bi-arrow-left-circle' />{" "}
-                      <span>
-                        {" "}
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ{" "}
-                      </span>
+                      <span> بیش از دو هزار پروژه موفق</span>
                     </li>
                     <li className='d-flex flex-row-reverse'>
                       <i className='bi bi-arrow-left-circle' />{" "}
-                      <span>
-                        {" "}
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ{" "}
-                      </span>
+                      <span>فروش اقساطی با بهترین شرایط</span>
                     </li>
+
                     <li className='d-flex flex-row-reverse'>
                       <i className='bi bi-arrow-left-circle' />{" "}
                       <span>
-                        {" "}
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ{" "}
+                        پوشش گسترده جغرافیایی در 3 کشور ترکیه، قبرس و دبی
                       </span>
                     </li>
                   </ul>
@@ -534,10 +524,10 @@ const Landing1 = () => {
                       <div className='testi-counter-title'>
                         <h3 className='counter'>
                           {" "}
-                          <Counter end={1372} />{" "}
+                          <Counter end={2339} />{" "}
                         </h3>
                         <span>+</span>
-                        <p> Happy Customers </p>
+                        <p> مشتریان راضی </p>
                       </div>
                     </div>
                   </div>
@@ -546,10 +536,10 @@ const Landing1 = () => {
                       <div className='testi-counter-title'>
                         <h3 className='counter'>
                           {" "}
-                          <Counter end={100} />{" "}
+                          <Counter end={89} />{" "}
                         </h3>
                         <span>%</span>
-                        <p> Satisfaction Rate </p>
+                        <p> رضایت مشتریان </p>
                       </div>
                     </div>
                   </div>
@@ -557,12 +547,12 @@ const Landing1 = () => {
               </div>
               <div className='col-lg-7 col-md-6'>
                 <div className='consen-section-title white pb-50'>
-                  <h5> Testimonials </h5>
-                  <h2> Consen Trusted Customers </h2>
-                  <h2>
+                  <h5> رضایت‌نامه </h5>
+                  <h2> اعتماد مشتریان به اویم استانبول </h2>
+                  {/* <h2>
                     {" "}
                     Awesome <span> Reviews </span>
-                  </h2>
+                  </h2> */}
                 </div>
               </div>
               <div className='testi-shape-thumb1 rotateme'>
@@ -574,6 +564,24 @@ const Landing1 = () => {
                 {...testimonial_list_slider}
                 className='testimonial_list owl-carousel'>
                 <SwiperSlide className='pr-1'>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
+                </SwiperSlide>
+                {/* <SwiperSlide className='pr-1'>
                   <div className='testimonial-single-box'>
                     <div className='testimonial-content1'>
                       <div className='single-quote-icon'>
@@ -768,7 +776,7 @@ const Landing1 = () => {
                       </div>
                     </div>
                   </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
                 <div className='owl-dots'></div>
               </Swiper>
               <div className='testi-shape'>
@@ -800,13 +808,13 @@ const Landing1 = () => {
           <div className='container'>
             <div className='row align-items-center'>
               <div className='col-lg-5 col-md-6'>
-                <div className='process-text'>
+                {/* <div className='process-text'>
                   <p>
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است
                   </p>
-                </div>
+                </div> */}
               </div>
               <div className='col-lg-7 col-md-6'>
                 <div className='consen-section-title white pb-4 pb-lg-5'>
@@ -814,7 +822,7 @@ const Landing1 = () => {
                   <h2> قدم های آسان </h2>
                   <h2>
                     {" "}
-                    برای <span> فروش </span>
+                    برای <span> مهاجرت </span>
                   </h2>
                 </div>
               </div>
@@ -839,10 +847,10 @@ const Landing1 = () => {
                     <img src='assets/images/resource/a.png' alt />
                   </div>
                   <div className='process-title'>
-                    <h3>ایجاد ایده</h3>
-                    <p>
+                    <h3>ایده مهاجرت</h3>
+                    {/* <p>
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -852,10 +860,10 @@ const Landing1 = () => {
                     <img src='assets/images/resource/b.png' alt />
                   </div>
                   <div className='process-title'>
-                    <h3> لورم ایپسوم </h3>
-                    <p>
+                    <h3> مشاوره با اویم استانبول</h3>
+                    {/* <p>
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -865,10 +873,10 @@ const Landing1 = () => {
                     <img src='assets/images/resource/c.png' alt />
                   </div>
                   <div className='process-title'>
-                    <h3> لورم ایپسوم </h3>
-                    <p>
+                    <h3> انجام مراحل مهاجرت </h3>
+                    {/* <p>
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>

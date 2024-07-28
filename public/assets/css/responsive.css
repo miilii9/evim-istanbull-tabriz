@@ -1409,7 +1409,13 @@
     background-size: inherit;
     background-position: inherit;
   }
-
+  .slider2.slider-area .slider-content p,
+  .slider2.slider-area .slider-content h1,
+  .slider2.slider-area .slider-button {
+    width: fit-content !important;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
   .slider-shape {
     display: none;
   }
@@ -1625,7 +1631,7 @@
 
   .style-three .consen-section-title h2 {
     font-size: 30px;
-    text-align: left;
+    text-align: right;
   }
 
   .about-area .dreamit-about-thumb {
@@ -1724,7 +1730,7 @@
 
   .style-three.case-study-area .consen-section-title h2 {
     width: 100%;
-    text-align: center;
+    text-align: right;
   }
 
   .upper.consen-section-title h5::after {
@@ -3224,7 +3230,12 @@
   .sticky {
     position: relative !important;
   }
-
+  .slider2.slider-area .slider-content p,
+  .slider2.slider-area .slider-content h1 {
+    width: fit-content !important;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
   .style-three.about-area .dreamit-about-thumb {
     margin: 0;
   }
