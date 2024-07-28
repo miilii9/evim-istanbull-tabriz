@@ -57,6 +57,11 @@
     width: fit-content !important;
     padding-right: 0.3rem;
   }
+  /* .consen-section-title h5,
+  .consen-section-title h2,
+  .consen-section-title p {
+    text-align: center;
+  } */
 }
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3376,10 +3381,12 @@
   .style-three.about-area .consen-section-title h2 {
     text-align: left;
   }
-
+  .team_area .consen-section-title h2 {
+    text-align: center;
+  }
   .style-three.about-area .consen-section-title p {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
   }
 
   .style-three.about-area .about-button {
@@ -3397,17 +3404,26 @@
   .style-three.service-area .service-shape {
     display: none;
   }
-
+  .style-three.about-area .consen-section-title {
+    text-align: center !important;
+    align-items: center !important;
+  }
   .style-three.service-area .consen-section-title {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
   }
 
   .why-choose-us-area .consen-section-title h2 {
-    text-align: left;
+    text-align: center;
   }
 
   .why-choose-us-area .consen-section-title p {
-    text-align: left;
+    text-align: center;
   }
 
   .testimonial-area .testi-shape-thumb {
@@ -3432,6 +3448,7 @@
 
   .process-area.style-two .consen-section-title h2 {
     font-size: 19px;
+    text-align: center;
   }
 
   .process-area.style-two .process-text {
@@ -3974,8 +3991,11 @@
   .style-three.case-study-area .consen-section-title h2 {
     font-size: 24px;
     width: 100%;
+    text-align: center;
   }
-
+  .testimonial-area .consen-section-title h2 {
+    text-align: center;
+  }
   .consen-section-title h5 {
     font-size: 16px;
   }

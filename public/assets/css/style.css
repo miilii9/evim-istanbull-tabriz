@@ -3007,6 +3007,8 @@ p.choose-text1 {
   border-radius: 3px;
   background: #fff;
   margin-bottom: 30px;
+  direction: rtl;
+  text-align: right;
 }
 
 .testimonial-single-box:before {
@@ -3537,6 +3539,7 @@ p.choose-text1 {
 
 .single_team_thumb1 img {
   width: 100%;
+  max-height: 350px;
 }
 
 /*team content*/
@@ -7610,6 +7613,6 @@ ul.social-box li a:hover {
   top: -100%;
   opacity: 0;
 }
-.dreamit-icon-list ul li{
+.dreamit-icon-list ul li {
   gap: 0.3rem;
 }

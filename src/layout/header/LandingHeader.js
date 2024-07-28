@@ -141,7 +141,7 @@ const LandingHeader = ({ popUpHandler }) => {
               <div className='sidebar-info-contents'>
                 <div className='content-inner'>
                   <div className='nav-logo'>
-                    <a href='index.html'>
+                    <a href='/'>
                       <img
                         src='assets/images/evim-logo.png'
                         alt='logo'
@@ -160,9 +160,14 @@ const LandingHeader = ({ popUpHandler }) => {
                       کیفیت در زمینه‌های مختلف، توانسته است جایگاه ویژه‌ای در
                       بازار ترکیه، قبرس و دبی پیدا کند
                     </p>
-                    <a href='index' className='theme-btn btn-style-two'>
+                    <span
+                      className='theme-btn btn-style-two'
+                      onClick={() => {
+                        setToggle(false);
+                        popUpHandler();
+                      }}>
                       <span>مشاوره</span> <i className='fas fa-heart' />
-                    </a>
+                    </span>
                   </div>
                   <div className='contact-info'>
                     <h2>ارتباط با ما</h2>

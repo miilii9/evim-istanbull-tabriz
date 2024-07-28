@@ -67,11 +67,11 @@ const MobileMenu = () => {
                   <a href='/contact'>ارتباط با ما</a>
                 </Link>
               </li>
-              <li className='mean-last'>
+              {/* <li className='mean-last'>
                 <Link legacyBehavior href='about'>
                   <a href='#about'>درباره ما</a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

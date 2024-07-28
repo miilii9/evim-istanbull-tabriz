@@ -72,12 +72,12 @@ const CaseStudies = () => {
                 <li
                   className={`c-pointer ${activeBtn("قبرس")}`}
                   onClick={handleFilterKeyChange("قبرس")}>
-                  امارات
+                  قبرس
                 </li>
                 <li
                   className={`c-pointer ${activeBtn("امارات")}`}
                   onClick={handleFilterKeyChange("امارات")}>
-                  قبرس
+                  امارات
                 </li>
               </ul>
             </div>
@@ -85,7 +85,7 @@ const CaseStudies = () => {
         </div>
       </div>
       <div className='row image_load'>
-        <div className='col-lg-4 col-md-6 grid-item ترکیه english'>
+        <div className='col-lg-4 col-md-6 grid-item ترکیه '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/evinPark.jpeg' alt />
@@ -123,7 +123,7 @@ const CaseStudies = () => {
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item ترکیه قبرس امارات'>
+        <div className='col-lg-4 col-md-6 grid-item ترکیه  '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/kuru.webp' alt />
@@ -161,7 +161,7 @@ const CaseStudies = () => {
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item قبرس english'>
+        <div className='col-lg-4 col-md-6 grid-item  ترکیه'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/maslak.jpg' alt />
@@ -199,19 +199,11 @@ const CaseStudies = () => {
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item امارات english'>
+        {/* <div className='col-lg-4 col-md-6 grid-item  ترکیه'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/nidapark.jpeg' alt />
-              {/* port icon */}
-              {/* <div className='single_portfolio_icon'>
-                <a
-                  className='portfolio-icon venobox vbox-item'
-                  data-gall='myportfolio'
-                  href='assets/images/project/nidapark.jpeg'>
-                  <i className='bi bi-card-image' />
-                </a>
-              </div> */}
+
               <div className='case-study-content'>
                 <div className='case-study-content-inner'>
                   <div className='case-study-title'>
@@ -225,28 +217,67 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className='video-icon style-two'>
-                <a
-                  className='video-vemo-icon venobox vbox-item'
-                  data-vbtype='youtube'
-                  data-autoplay='true'
-                  href='https://youtu.be/BS4TUd7FJSg'>
-                  <i className='fa fa-play' />
-                </a>
-              </div> */}
+           
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item امارات ترکیه'>
+        <div className='col-lg-4 col-md-6 grid-item  ترکیه'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
               <img src='assets/images/project/vadi.webp' alt />
+
+              <div className='case-study-content'>
+                <div className='case-study-content-inner'>
+                  <div className='case-study-title'>
+                    <h6> برای خرید </h6>
+                    <h3>
+                      {" "}
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
+                      </Link>{" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div className='col-lg-4 col-md-6 grid-item  ترکیه'>
+          <div className='case-study-single-box'>
+            <div className='case-study-thumb2'>
+              <img src='assets/images/project/yedi.jpg' alt />
+
+              <div className='case-study-content'>
+                <div className='case-study-content-inner'>
+                  <div className='case-study-title'>
+                    <h6> برای خرید </h6>
+                    <h3>
+                      {" "}
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
+                      </Link>{" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div> */}
+        <div className='col-lg-4 col-md-6 grid-item قبرس '>
+          <div className='case-study-single-box'>
+            <div className='case-study-thumb2'>
+              <img
+                src='assets/images/project/cyprus/aerial-view-city-coastline-turkey.jpg'
+                alt
+              />
               {/* port icon */}
               {/* <div className='single_portfolio_icon'>
                 <a
                   className='portfolio-icon venobox vbox-item'
                   data-gall='myportfolio'
-                  href='assets/images/project/vadi.webp'>
+                  href='assets/images/project/yedi.jpg'>
                   <i className='bi bi-card-image' />
                 </a>
               </div> */}
@@ -275,10 +306,177 @@ const CaseStudies = () => {
             </div>
           </div>
         </div>
-        <div className='col-lg-4 col-md-6 grid-item قبرس ترکیه'>
+        <div className='col-lg-4 col-md-6 grid-item قبرس '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img src='assets/images/project/yedi.jpg' alt />
+              <img
+                src='assets/images/project/cyprus/cityscape-singapore-city-skyline.jpg'
+                alt
+              />
+              {/* port icon */}
+              {/* <div className='single_portfolio_icon'>
+                <a
+                  className='portfolio-icon venobox vbox-item'
+                  data-gall='myportfolio'
+                  href='assets/images/project/yedi.jpg'>
+                  <i className='bi bi-card-image' />
+                </a>
+              </div> */}
+              <div className='case-study-content'>
+                <div className='case-study-content-inner'>
+                  <div className='case-study-title'>
+                    <h6> برای خرید </h6>
+                    <h3>
+                      {" "}
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
+                      </Link>{" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              {/* <div className='video-icon style-two'>
+                <a
+                  className='video-vemo-icon venobox vbox-item'
+                  data-vbtype='youtube'
+                  data-autoplay='true'
+                  href='https://youtu.be/BS4TUd7FJSg'>
+                  <i className='fa fa-play' />
+                </a>
+              </div> */}
+            </div>
+          </div>
+        </div>
+        <div className='col-lg-4 col-md-6 grid-item قبرس '>
+          <div className='case-study-single-box'>
+            <div className='case-study-thumb2'>
+              <img
+                src='assets/images/project/cyprus/wide-angle-shot-sea-caves-cyprus-daytime.jpg'
+                alt
+              />
+              {/* port icon */}
+              {/* <div className='single_portfolio_icon'>
+                <a
+                  className='portfolio-icon venobox vbox-item'
+                  data-gall='myportfolio'
+                  href='assets/images/project/yedi.jpg'>
+                  <i className='bi bi-card-image' />
+                </a>
+              </div> */}
+              <div className='case-study-content'>
+                <div className='case-study-content-inner'>
+                  <div className='case-study-title'>
+                    <h6> برای خرید </h6>
+                    <h3>
+                      {" "}
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
+                      </Link>{" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              {/* <div className='video-icon style-two'>
+                <a
+                  className='video-vemo-icon venobox vbox-item'
+                  data-vbtype='youtube'
+                  data-autoplay='true'
+                  href='https://youtu.be/BS4TUd7FJSg'>
+                  <i className='fa fa-play' />
+                </a>
+              </div> */}
+            </div>
+          </div>
+        </div>
+        <div className='col-lg-4 col-md-6 grid-item امارات '>
+          <div className='case-study-single-box'>
+            <div className='case-study-thumb2'>
+              <img
+                src='assets/images/project/dobei/aerial-view-dubai-city-from-top-tower.jpg'
+                alt
+              />
+              {/* port icon */}
+              {/* <div className='single_portfolio_icon'>
+                <a
+                  className='portfolio-icon venobox vbox-item'
+                  data-gall='myportfolio'
+                  href='assets/images/project/yedi.jpg'>
+                  <i className='bi bi-card-image' />
+                </a>
+              </div> */}
+              <div className='case-study-content'>
+                <div className='case-study-content-inner'>
+                  <div className='case-study-title'>
+                    <h6> برای خرید </h6>
+                    <h3>
+                      {" "}
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
+                      </Link>{" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              {/* <div className='video-icon style-two'>
+                <a
+                  className='video-vemo-icon venobox vbox-item'
+                  data-vbtype='youtube'
+                  data-autoplay='true'
+                  href='https://youtu.be/BS4TUd7FJSg'>
+                  <i className='fa fa-play' />
+                </a>
+              </div> */}
+            </div>
+          </div>
+        </div>
+        <div className='col-lg-4 col-md-6 grid-item امارات '>
+          <div className='case-study-single-box'>
+            <div className='case-study-thumb2'>
+              <img
+                src='assets/images/project/dobei/futuristic-dubai-landscape.jpg'
+                alt
+              />
+              {/* port icon */}
+              {/* <div className='single_portfolio_icon'>
+                <a
+                  className='portfolio-icon venobox vbox-item'
+                  data-gall='myportfolio'
+                  href='assets/images/project/yedi.jpg'>
+                  <i className='bi bi-card-image' />
+                </a>
+              </div> */}
+              <div className='case-study-content'>
+                <div className='case-study-content-inner'>
+                  <div className='case-study-title'>
+                    <h6> برای خرید </h6>
+                    <h3>
+                      {" "}
+                      <Link legacyBehavior href=''>
+                        <a> جهت خرید با ما در ارتباط باشید</a>
+                      </Link>{" "}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              {/* <div className='video-icon style-two'>
+                <a
+                  className='video-vemo-icon venobox vbox-item'
+                  data-vbtype='youtube'
+                  data-autoplay='true'
+                  href='https://youtu.be/BS4TUd7FJSg'>
+                  <i className='fa fa-play' />
+                </a>
+              </div> */}
+            </div>
+          </div>
+        </div>
+        <div className='col-lg-4 col-md-6 grid-item امارات '>
+          <div className='case-study-single-box'>
+            <div className='case-study-thumb2'>
+              <img
+                src='assets/images/project/dobei/dubai-skyline-wallpaper.jpg'
+                alt
+              />
               {/* port icon */}
               {/* <div className='single_portfolio_icon'>
                 <a

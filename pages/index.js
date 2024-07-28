@@ -563,220 +563,220 @@ const Landing1 = () => {
               <Swiper
                 {...testimonial_list_slider}
                 className='testimonial_list owl-carousel'>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
                 {/* <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi1.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4>Philip Anthorpy</h4>
-                          <p>UI Designer</p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
                 </SwiperSlide>
                 <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi3.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> Shilpa Shethy </h4>
-                          <p> CEO, Founder </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
                 </SwiperSlide>
                 <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi2.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> David Alexon </h4>
-                          <p> MH Manager </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
                 </SwiperSlide>
                 <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi3.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> Shilpa Shethy </h4>
-                          <p> CEO, Founder </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
                 </SwiperSlide>
                 <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi2.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> David Alexon </h4>
-                          <p> MH Manager </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
                 </SwiperSlide>
                 <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi1.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4>Philip Anthorpy</h4>
-                          <p>UI Designer</p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi2.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> David Alexon </h4>
-                          <p> MH Manager </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
+                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
                 </SwiperSlide> */}
+                <SwiperSlide className='pr-1'>
+                  <div className='testimonial-single-box'>
+                    <div className='testimonial-content1'>
+                      <div className='single-quote-icon'>
+                        <div className='quote-thumb'>
+                          <img src='assets/images/resource/testi1.png' alt />
+                        </div>
+                        <div className='quote-title'>
+                          <h4>Philip Anthorpy</h4>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                      <div className='em-testimonial-text'>
+                        <p>
+                          “Holisticly pursue market-more synerg through
+                          innovative paradi. Enthusia productivate media”.
+                        </p>
+                      </div>
+                      <div className='em-testi-start-icon'>
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-half' />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <div className='testimonial-single-box'>
+                    <div className='testimonial-content1'>
+                      <div className='single-quote-icon'>
+                        <div className='quote-thumb'>
+                          <img src='assets/images/resource/testi3.png' alt />
+                        </div>
+                        <div className='quote-title'>
+                          <h4> Shilpa Shethy </h4>
+                          <p> CEO, Founder </p>
+                        </div>
+                      </div>
+                      <div className='em-testimonial-text'>
+                        <p>
+                          “Holisticly pursue market-more synerg through
+                          innovative paradi. Enthusia productivate media”.
+                        </p>
+                      </div>
+                      <div className='em-testi-start-icon'>
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-half' />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <div className='testimonial-single-box'>
+                    <div className='testimonial-content1'>
+                      <div className='single-quote-icon'>
+                        <div className='quote-thumb'>
+                          <img src='assets/images/resource/testi2.png' alt />
+                        </div>
+                        <div className='quote-title'>
+                          <h4> David Alexon </h4>
+                          <p> MH Manager </p>
+                        </div>
+                      </div>
+                      <div className='em-testimonial-text'>
+                        <p>
+                          “Holisticly pursue market-more synerg through
+                          innovative paradi. Enthusia productivate media”.
+                        </p>
+                      </div>
+                      <div className='em-testi-start-icon'>
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-half' />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <div className='testimonial-single-box'>
+                    <div className='testimonial-content1'>
+                      <div className='single-quote-icon'>
+                        <div className='quote-thumb'>
+                          <img src='assets/images/resource/testi3.png' alt />
+                        </div>
+                        <div className='quote-title'>
+                          <h4> Shilpa Shethy </h4>
+                          <p> CEO, Founder </p>
+                        </div>
+                      </div>
+                      <div className='em-testimonial-text'>
+                        <p>
+                          “Holisticly pursue market-more synerg through
+                          innovative paradi. Enthusia productivate media”.
+                        </p>
+                      </div>
+                      <div className='em-testi-start-icon'>
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-half' />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <div className='testimonial-single-box'>
+                    <div className='testimonial-content1'>
+                      <div className='single-quote-icon'>
+                        <div className='quote-thumb'>
+                          <img src='assets/images/resource/testi2.png' alt />
+                        </div>
+                        <div className='quote-title'>
+                          <h4> David Alexon </h4>
+                          <p> MH Manager </p>
+                        </div>
+                      </div>
+                      <div className='em-testimonial-text'>
+                        <p>
+                          “Holisticly pursue market-more synerg through
+                          innovative paradi. Enthusia productivate media”.
+                        </p>
+                      </div>
+                      <div className='em-testi-start-icon'>
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-half' />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <div className='testimonial-single-box'>
+                    <div className='testimonial-content1'>
+                      <div className='single-quote-icon'>
+                        <div className='quote-thumb'>
+                          <img src='assets/images/resource/testi1.png' alt />
+                        </div>
+                        <div className='quote-title'>
+                          <h4>Philip Anthorpy</h4>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                      <div className='em-testimonial-text'>
+                        <p>
+                          “Holisticly pursue market-more synerg through
+                          innovative paradi. Enthusia productivate media”.
+                        </p>
+                      </div>
+                      <div className='em-testi-start-icon'>
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-half' />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className='pr-1'>
+                  <div className='testimonial-single-box'>
+                    <div className='testimonial-content1'>
+                      <div className='single-quote-icon'>
+                        <div className='quote-thumb'>
+                          <img src='assets/images/resource/testi2.png' alt />
+                        </div>
+                        <div className='quote-title'>
+                          <h4> David Alexon </h4>
+                          <p> MH Manager </p>
+                        </div>
+                      </div>
+                      <div className='em-testimonial-text'>
+                        <p>
+                          “Holisticly pursue market-more synerg through
+                          innovative paradi. Enthusia productivate media”.
+                        </p>
+                      </div>
+                      <div className='em-testi-start-icon'>
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-fill' />
+                        <i className='bi bi-star-half' />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
                 <div className='owl-dots'></div>
               </Swiper>
               <div className='testi-shape'>
@@ -902,7 +902,7 @@ const Landing1 = () => {
                   <h5> اعضای تیم </h5>
                   <h2>
                     {" "}
-                    اشنایی با <span> کارشناسان ما </span>
+                    اشنایی با <span>عوامل مجموعه ما </span>
                   </h2>
                 </div>
               </div>
@@ -911,60 +911,28 @@ const Landing1 = () => {
               <div className='col-lg-4 col-sm-6'>
                 <div className='single_team'>
                   <div className='single_team_thumb1'>
-                    <img src='assets/images/resource/team-1.jpg' alt='logo' />
+                    <img src='assets/images/team/rostamzade.JPG' alt='logo' />
                   </div>
                   <div className='single_team_content'>
                     <div className='team-title'>
-                      <h4>Silvia Garden</h4>
-                      <span>Designer</span>
+                      <h4>مسعود رستم زاده</h4>
+                      <span>مدیر داخلی</span>
                     </div>
-                    <div className='single_team_icon'>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-facebook' />{" "}
-                      </a>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-twitter' />{" "}
-                      </a>
-                      <a href='#'>
-                        <i className='bi bi-dribbble' />
-                      </a>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-instagram'> </i>{" "}
-                      </a>
-                    </div>
+                    <div className='single_team_icon'></div>
                   </div>
                 </div>
               </div>
               <div className='col-lg-4 col-sm-6'>
                 <div className='single_team'>
                   <div className='single_team_thumb1'>
-                    <img src='assets/images/resource/team-2.jpg' alt='image' />
+                    <img src='assets/images/team/amiri.jpg' alt='image' />
                   </div>
                   <div className='single_team_content'>
                     <div className='team-title'>
-                      <h4> Monalisha Shen </h4>
-                      <span> IT-Executive </span>
+                      <h4> سالار امیری </h4>
+                      <span> موسس </span>
                     </div>
-                    <div className='single_team_icon'>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-facebook' />{" "}
-                      </a>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-twitter' />{" "}
-                      </a>
-                      <a href='#'>
-                        <i className='bi bi-dribbble' />
-                      </a>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-instagram'> </i>{" "}
-                      </a>
-                    </div>
+                    <div className='single_team_icon'></div>
                   </div>
                 </div>
               </div>
@@ -975,26 +943,10 @@ const Landing1 = () => {
                   </div>
                   <div className='single_team_content'>
                     <div className='team-title'>
-                      <h4>Bubli Khanam</h4>
-                      <span>Developer</span>
+                      <h4>مهسا محمدی</h4>
+                      <span>مدیر اجرایی</span>
                     </div>
-                    <div className='single_team_icon'>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-facebook' />{" "}
-                      </a>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-twitter' />{" "}
-                      </a>
-                      <a href='#'>
-                        <i className='bi bi-dribbble' />
-                      </a>
-                      <a href='#'>
-                        {" "}
-                        <i className='bi bi-instagram'> </i>{" "}
-                      </a>
-                    </div>
+                    <div className='single_team_icon'></div>
                   </div>
                 </div>
               </div>
