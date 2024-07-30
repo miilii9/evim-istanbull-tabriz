@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useState } from "react";
 const LandingHeader = ({ popUpHandler }) => {
@@ -62,8 +63,10 @@ const LandingHeader = ({ popUpHandler }) => {
               <div className='logo'>
                 <Link legacyBehavior href='/'>
                   <a className='logo_img' title='consen'>
-                    <img
-                      src='assets/images/evim-logo.png'
+                    <Image
+                      height={60}
+                      width={60}
+                      src='/assets/images/evim-logo.png'
                       alt='logo'
                       style={{ width: "60px" }}
                     />
@@ -71,8 +74,10 @@ const LandingHeader = ({ popUpHandler }) => {
                 </Link>
                 <Link legacyBehavior href='/'>
                   <a className='main_sticky' title='consen'>
-                    <img
-                      src='assets/images/evim-logo.png'
+                    <Image
+                      height={80}
+                      width={80}
+                      src='/assets/images/evim-logo.png'
                       alt='logo'
                       style={{ width: "80px " }}
                     />
@@ -142,8 +147,10 @@ const LandingHeader = ({ popUpHandler }) => {
                 <div className='content-inner'>
                   <div className='nav-logo'>
                     <a href='/'>
-                      <img
-                        src='assets/images/evim-logo.png'
+                      <Image
+                        height={50}
+                        width={50}
+                        src='/assets/images/evim-logo.png'
                         alt='logo'
                         style={{ width: "50px" }}
                       />{" "}
@@ -174,6 +181,20 @@ const LandingHeader = ({ popUpHandler }) => {
                     <ul className='list-style-one'>
                       <li>
                         <span className='bi  bi-geo-alt' />
+                        استانبول ,بیلیکدوزو ,محله نازیم حکمت ,ساختمان مارمارا
+                        کونسپت{" "}
+                      </li>
+                      <li>
+                        <span>
+                          {" "}
+                          <i className='bi bi-telephone-inbound' />{" "}
+                        </span>
+                        905411852316+
+                      </li>
+                    </ul>
+                    <ul className='list-style-one'>
+                      <li>
+                        <span className='bi  bi-geo-alt' />
                         تبریز، ولیعصر، برج تجارت جهانی
                       </li>
                       <li>
@@ -187,7 +208,7 @@ const LandingHeader = ({ popUpHandler }) => {
                         <span>
                           <i className='bi bi-geo-alt' />
                         </span>
-                        @evimstanbull.tab
+                        evimstanbull.tab@
                       </li>
                     </ul>
                   </div>

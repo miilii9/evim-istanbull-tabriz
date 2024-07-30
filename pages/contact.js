@@ -33,16 +33,13 @@ const Contact = () => {
   });
 
   const submitHandler = async (data) => {
-    setLoading(true);
     await sendMessage(data)
       .then((res) => {
         if (res.status === 200) {
-          setLoading(false);
           toast.success("ارسال پیام موفق", { position: "top-center" });
         }
       })
       .catch((err) => {
-        setLoading(false);
         console.log(err);
       });
   };
@@ -93,16 +90,14 @@ const Contact = () => {
                 <div className='cda-single-content hr d-flex'></div>
               </div>
             </div>
-            <div className='col-sm-12 col-md-6 col-lg-6 pl-0 pr-0 h-100' dir='rtl'>
+            <div
+              className='col-sm-12 col-md-6 col-lg-6 pl-0 pr-0 h-100'
+              dir='rtl'>
               <div className='contact_from_box h-100'>
                 <div className='contact_title pb-4 text-end'>
                   <h3 className='text-start'>با ما در ارتباط باشید</h3>
                 </div>
-                <form
-                  onSubmit={handleSubmit(submitHandler)}
-                  action='#'
-                  method='POST'
-                  id='dreamit-form'>
+                <form onSubmit={handleSubmit(submitHandler)} id='dreamit-form'>
                   <div className='row'>
                     <div className='col-lg-6'>
                       <div className='form_box mb-30'>

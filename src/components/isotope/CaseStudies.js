@@ -1,4 +1,5 @@
 import Isotope from "isotope-layout";
+import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
 
@@ -40,10 +41,10 @@ const CaseStudies = () => {
       <div className='row case-study-bg'>
         <div className='col-lg-12'>
           <div className='consen-section-title upper text-center pb-50'>
-            <h5> فایل ها </h5>
-            <h2> بهترین هارا برای شما به ارمغان میاوریم </h2>
+            {/* <h5> فایل ها </h5> */}
+            <h2> </h2>
             <h2>
-              مشاهده <span> فایل ها </span>
+              بهترین هارا برای <span> شما</span> به ارمغان میاوریم
             </h2>
           </div>
         </div>
@@ -88,7 +89,12 @@ const CaseStudies = () => {
         <div className='col-lg-4 col-md-6 grid-item ترکیه '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img src='assets/images/project/evinPark.jpeg' alt />
+              <Image
+                height={400}
+                width={300}
+                src='/assets/images/project/evinPark.jpeg'
+                alt
+              />
               {/* port icon */}
               {/* <div className='single_portfolio_icon'>
                 <a
@@ -126,7 +132,12 @@ const CaseStudies = () => {
         <div className='col-lg-4 col-md-6 grid-item ترکیه  '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img src='assets/images/project/kuru.webp' alt />
+              <Image
+                height={400}
+                width={300}
+                src='/assets/images/project/kuru.webp'
+                alt
+              />
               {/* port icon */}
               {/* <div className='single_portfolio_icon'>
                 <a
@@ -164,7 +175,12 @@ const CaseStudies = () => {
         <div className='col-lg-4 col-md-6 grid-item  ترکیه'>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img src='assets/images/project/maslak.jpg' alt />
+              <Image
+                height={400}
+                width={300}
+                src='/assets/images/project/maslak.jpg'
+                alt
+              />
               {/* port icon */}
               {/* <div className='single_portfolio_icon'>
                 <a
@@ -309,8 +325,10 @@ const CaseStudies = () => {
         <div className='col-lg-4 col-md-6 grid-item قبرس '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img
-                src='assets/images/project/cyprus/cityscape-singapore-city-skyline.jpg'
+              <Image
+                height={400}
+                width={300}
+                src='/assets/images/project/cyprus/cityscape-singapore-city-skyline.jpg'
                 alt
               />
               {/* port icon */}
@@ -350,8 +368,10 @@ const CaseStudies = () => {
         <div className='col-lg-4 col-md-6 grid-item قبرس '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img
-                src='assets/images/project/cyprus/wide-angle-shot-sea-caves-cyprus-daytime.jpg'
+              <Image
+                height={400}
+                width={300}
+                src='/assets/images/project/cyprus/wide-angle-shot-sea-caves-cyprus-daytime.jpg'
                 alt
               />
               {/* port icon */}
@@ -391,8 +411,10 @@ const CaseStudies = () => {
         <div className='col-lg-4 col-md-6 grid-item امارات '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img
-                src='assets/images/project/dobei/aerial-view-dubai-city-from-top-tower.jpg'
+              <Image
+                height={400}
+                width={300}
+                src='/assets/images/project/dobei/aerial-view-dubai-city-from-top-tower.jpg'
                 alt
               />
               {/* port icon */}
@@ -432,8 +454,10 @@ const CaseStudies = () => {
         <div className='col-lg-4 col-md-6 grid-item امارات '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img
-                src='assets/images/project/dobei/futuristic-dubai-landscape.jpg'
+              <Image
+                height={400}
+                width={300}
+                src='/assets/images/project/dobei/futuristic-dubai-landscape.jpg'
                 alt
               />
               {/* port icon */}
@@ -473,8 +497,10 @@ const CaseStudies = () => {
         <div className='col-lg-4 col-md-6 grid-item امارات '>
           <div className='case-study-single-box'>
             <div className='case-study-thumb2'>
-              <img
-                src='assets/images/project/dobei/dubai-skyline-wallpaper.jpg'
+              <Image
+                height={400}
+                width={300}
+                src='/assets/images/project/dobei/dubai-skyline-wallpaper.jpg'
                 alt
               />
               {/* port icon */}

@@ -6,7 +6,7 @@ const DefaultFooter = () => {
       <div className='container'>
         <div className='footer-bg'>
           <div className='row'>
-            <div className='col-lg-4 col-sm-6'>
+            <div className='col-lg-5 col-sm-6'>
               <div className='widget widgets-company-info mb-4 mb-lg-0'>
                 <div className='company-info-desc pr-2'>
                   <h4 className='widget-title'> درباره ما </h4>
@@ -38,7 +38,7 @@ const DefaultFooter = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-2 col-6'>
+            <div className='col-lg-3 col-6'>
               <div className='widget widget-nav-menu'>
                 <h4 className='widget-title'>اویم استانبول</h4>
                 <div className='menu-quick-link-content'>
