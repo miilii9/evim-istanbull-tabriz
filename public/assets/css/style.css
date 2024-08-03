@@ -2999,6 +2999,13 @@ p.choose-text1 {
 .testimonial-area .team-title span {
   color: #000;
 }
+.testimonial-area .team-title > span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 4px;
+}
 .testimonial-area .team-title {
   background-color: #fff;
   color: #000;

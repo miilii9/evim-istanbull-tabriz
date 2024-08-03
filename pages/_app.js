@@ -30,7 +30,6 @@ const App = ({ Component, pageProps }) => {
       <ConsenHead />
       <Preloader />
       {!loding && <Component {...pageProps} />}
-      {/* </ToastContainer> */}
       <Script src='/assets/yektanetCdn.js' strategy='beforeInteractive' />
     </Fragment>
   );

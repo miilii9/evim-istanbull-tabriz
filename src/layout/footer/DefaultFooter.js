@@ -48,94 +48,18 @@ const DefaultFooter = () => {
                         خانه
                       </Link>
                     </li>
-                    {/* <li>
-                      <Link legacyBehavior href='about'>
-                        درباره ما
-                      </Link>
-                    </li> */}
+                   
                     <li>
                       <Link legacyBehavior href='contact'>
                         ارتباط با ما
                       </Link>
                     </li>
-                    {/* <li>
-                      <Link legacyBehavior href='service'>
-                        Service
-                      </Link>
-                    </li> */}
+                
                   </ul>
                 </div>
               </div>
             </div>
-            {/* <div className='col-lg-3 col-6'>
-              <div className='widget widget-nav-menu'>
-                <h4 className='widget-title'> Services </h4>
-                <div className='menu-quick-link-content'>
-                  <ul className='footer-menu'>
-                    <li>
-                      <a href='#'> Strategy &amp; Planing </a>
-                    </li>
-                    <li>
-                      <a href='#'> Consumer Market </a>
-                    </li>
-                    <li>
-                      <a href='#'> Data Analysis </a>
-                    </li>
-                    <li>
-                      <a href='#'> Corporate Finance </a>
-                    </li>
-                    <li>
-                      <a href='#'> Market Research </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div> */}
-            {/* <div className='col-lg-3 col-sm-6'>
-              <div id='em-recent-post-widget' className='mt-5 mt-sm-0'>
-                <div className='single-widget-item'>
-                  <h4 className='widget-title pb-2'>Popular Posts</h4>
-                  <div className='contact-form-footer '>
-                    <form onSubmit={(e) => e.preventDefault()}>
-                      <div className='subscribe_form'>
-                        <input
-                          type='email'
-                          name='email'
-                          id='email'
-                          className='form-control'
-                          required=''
-                          data-error='Please enter your email'
-                          placeholder='Enter E-Mail'
-                        />
-                        <button type='submit' className='btn'>
-                          {" "}
-                          <i className='bi bi-send-check' />
-                        </button>
-                      </div>
-                      <div className='subscribe_form_send'></div>
-                    </form>
-                  </div>
-                  <div className='recent-post-item'>
-                    <div className='recent-post-thumb1'>
-                      <a href='#'>
-                        <img
-                          src='assets/images/resource/google-play.png'
-                          alt=''
-                        />
-                      </a>
-                    </div>
-                    <div className='recent-post-thumb'>
-                      <a href='#'>
-                        <img
-                          src='assets/images/resource/app-store.png'
-                          alt=''
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            
           </div>
           <div className='foorer-shape'>
             <div className='footer-thumb'>

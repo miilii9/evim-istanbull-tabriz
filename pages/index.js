@@ -5,12 +5,9 @@ import Faqs from "@/src/components/Faqs";
 import FormComponent from "@/src/components/FormComponent";
 import ProgressBar from "@/src/components/ProgressBar";
 import Layout from "@/src/layout/Layout";
-import { testimonial_list_slider } from "@/src/sliderProps";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 const CaseStudies = dynamic(
   () => import("@/src/components/isotope/CaseStudies"),
   {
@@ -32,7 +29,7 @@ const Landing1 = () => {
       <ReportView slug={"home"} />
 
       {popup && <Popup setPopup={setPopup} />}
-
+      <div className='slider-area slider2 d-flex align-items-center'></div>
       <Layout header={4} popUpHandler={popUpHandler}>
         <div
           className='slider-area slider2 d-flex align-items-center'
@@ -108,16 +105,6 @@ const Landing1 = () => {
                     </div>
                     <div className='feature-bar' />
                   </div>
-                  {/* feature back */}
-                  {/* <div className='consen-feature-back'>
-                  <div className='feature-back-title'>
-                    <h3> Strategy </h3>
-                    <h2> Strategy Building </h2>
-                  </div>
-                  <div className='feature-back-icon'>
-                    <a href='#'>+</a>
-                  </div>
-                </div> */}
                 </div>
               </div>
               <div className='col-lg-4 col-md-6'>
@@ -137,16 +124,6 @@ const Landing1 = () => {
                     </div>
                     <div className='feature-bar' />
                   </div>
-                  {/* feature back */}
-                  {/* <div className='consen-feature-back'>
-                  <div className='feature-back-title'>
-                    <h3> Strategy </h3>
-                    <h2> Strategy Building </h2>
-                  </div>
-                  <div className='feature-back-icon'>
-                    <a href='#'>+</a>
-                  </div>
-                </div> */}
                 </div>
               </div>
               <div className='col-lg-4 col-md-6'>
@@ -166,16 +143,6 @@ const Landing1 = () => {
                     </div>
                     <div className='feature-bar' />
                   </div>
-                  {/* feature back */}
-                  {/* <div className='consen-feature-back'>
-                  <div className='feature-back-title'>
-                    <h3> Strategy </h3>
-                    <h2> Strategy Building </h2>
-                  </div>
-                  <div className='feature-back-icon'>
-                    <a href='#'>+</a>
-                  </div>
-                </div> */}
                 </div>
               </div>
               {/* feature shape */}
@@ -263,14 +230,6 @@ const Landing1 = () => {
                     </div>
                   </div>
                 </div>
-                {/* <div className='about-button'>
-                <Link legacyBehavior href='/about'>
-                  <a>
-                    {" "}
-                    <i className='bi bi-gear' /> More About{" "}
-                  </a>
-                </Link>
-              </div> */}
               </div>
             </div>
           </div>
@@ -311,15 +270,6 @@ const Landing1 = () => {
                         استانبول این خدمات را ارائه میدهد
                       </p>
                     </div>
-                    {/* <div className='service-button'>
-                      <Link legacyBehavior href='/service-details'>
-                        <a>
-                          {" "}
-                          بیشتر
-                          <i className='bi bi-plus' />{" "}
-                        </a>
-                      </Link>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -340,15 +290,6 @@ const Landing1 = () => {
                         خدمات ارائه میدهیم..
                       </p>
                     </div>
-                    {/* <div className='service-button'>
-                      <Link legacyBehavior href='/service-details'>
-                        <a>
-                          {" "}
-                          بیشتر
-                          <i className='bi bi-plus' />{" "}
-                        </a>
-                      </Link>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -369,15 +310,6 @@ const Landing1 = () => {
                         مجموعه ی خود قرار داده است..
                       </p>
                     </div>
-                    {/* <div className='service-button'>
-                      <Link legacyBehavior href='/service-details'>
-                        <a>
-                          {" "}
-                          بیشتر
-                          <i className='bi bi-plus' />{" "}
-                        </a>
-                      </Link>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -398,15 +330,6 @@ const Landing1 = () => {
                         فرآیندی سریع و مزایای متعدد به شما در این راه کمک میکند
                       </p>
                     </div>
-                    {/* <div className='service-button'>
-                      <Link legacyBehavior href='/service-details'>
-                        <a>
-                          {" "}
-                          بیشتر
-                          <i className='bi bi-plus' />{" "}
-                        </a>
-                      </Link>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -475,14 +398,6 @@ const Landing1 = () => {
                     </li>
                   </ul>
                 </div>
-                {/* <div className='why-choose-button'>
-                <Link legacyBehavior href='/about'>
-                  <a>
-                    {" "}
-                    <i className='bi bi-gear' /> More About{" "}
-                  </a>
-                </Link>
-              </div> */}
               </div>
               <div className='col-lg-6 col-md-12'>
                 <div className='why-choose-us-thumb'>
@@ -549,10 +464,6 @@ const Landing1 = () => {
                 <div className='consen-section-title white pb-50'>
                   <h5> اخذ شهروندی </h5>
                   <h2> پروژه های ویژه</h2>
-                  {/* <h2>
-                    {" "}
-                    Awesome <span> Reviews </span>
-                  </h2> */}
                 </div>
               </div>
               <div className='testi-shape-thumb1 rotateme'>
@@ -597,7 +508,9 @@ const Landing1 = () => {
                   <div className='single_team_content'>
                     <div className='team-title'>
                       <h4> گوزتپه کادیکوی آسیایی</h4>
-                      <span> ۷۲۰ الی ۹۰۰ هزار دلار متغییر هست </span>
+                      <span>
+                        <span>720</span> تا <span>900</span> هزار دلار متغییر{" "}
+                      </span>
                     </div>
                     <div className='single_team_icon'></div>
                   </div>
@@ -624,65 +537,7 @@ const Landing1 = () => {
                   </div>
                 </div>
               </div>
-              {/* <Swiper
-                breakpoints={{
-                  640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-                  768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                  },
-                  1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 50,
-                  },
-                }}
-                {...testimonial_list_slider}
-                className='testimonial_list owl-carousel'>
-                <SwiperSlide className='pr-1'>
-                  
-                  <div className='col-12'>
-                    <div className='single_team'>
-                      <div className='single_team_thumb1'>
-                        <img
-                          src='assets/images/project/off/a.jpg'
-                          alt='image'
-                        />
-                      </div>
-                      <div className='single_team_content'>
-                        <div className='team-title'>
-                          <h4>گوزتپه کادیکوی اسیایی</h4>
-                          <span> شهروندی </span>
-                        </div>
-                        <div className='single_team_icon'></div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <div className='col-12'>
-                    <div className='single_team'>
-                      <div className='single_team_thumb1'>
-                        <img
-                          src='assets/images/project/off/b.jfif'
-                          alt='image'
-                        />
-                      </div>
-                      <div className='single_team_content'>
-                        <div className='team-title'>
-                          <h4> گوزتپه کادیکوی آسیایی</h4>
-                          <span> تخفیف 12% </span>
-                        </div>
-                        <div className='single_team_icon'></div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-               
-                <div className='owl-dots'></div>
-              </Swiper> */}
+
               <div className='testi-shape'>
                 <div className='testi-shape-thumb'>
                   <img src='assets/images/resource/all-shape5.png' alt />
@@ -711,15 +566,7 @@ const Landing1 = () => {
         <div className='process-area style-two'>
           <div className='container'>
             <div className='row align-items-center'>
-              <div className='col-lg-5 col-md-6'>
-                {/* <div className='process-text'>
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است
-                  </p>
-                </div> */}
-              </div>
+              <div className='col-lg-5 col-md-6'></div>
               <div className='col-lg-7 col-md-6'>
                 <div className='consen-section-title white pb-4 pb-lg-5'>
                   <h5> مسیر </h5>
@@ -752,9 +599,6 @@ const Landing1 = () => {
                   </div>
                   <div className='process-title'>
                     <h3>ایده مهاجرت</h3>
-                    {/* <p>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                    </p> */}
                   </div>
                 </div>
               </div>
@@ -765,9 +609,6 @@ const Landing1 = () => {
                   </div>
                   <div className='process-title'>
                     <h3> مشاوره با اویم استانبول</h3>
-                    {/* <p>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                    </p> */}
                   </div>
                 </div>
               </div>
@@ -778,9 +619,6 @@ const Landing1 = () => {
                   </div>
                   <div className='process-title'>
                     <h3> انجام مراحل مهاجرت </h3>
-                    {/* <p>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                    </p> */}
                   </div>
                 </div>
               </div>
@@ -805,7 +643,6 @@ const Landing1 = () => {
                 <div className='consen-section-title upper text-center pb-60'>
                   <h5> اعضای تیم </h5>
                   <h2>
-                    {" "}
                     اشنایی با <span>عوامل مجموعه ما </span>
                   </h2>
                 </div>
@@ -882,60 +719,6 @@ const Landing1 = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-lg-6 col-md-6'>
-                {/* <div className='contract-form-bg'>
-                <div className='contact-form-title'>
-                  <h4> مشاوره رایگان </h4>
-                  <p> مشاوره 24/7 </p>
-                </div>
-                <div className='contact_from' dir='rtl'>
-                  <form onSubmit={(e) => e.preventDefault()} id='dreamit-form'>
-                    <div className='row'>
-                      <div className='col-lg-12'>
-                        <div className='form_box mb-20'>
-                          <input type='text' name='name' placeholder='نام*' />
-                        </div>
-                      </div>
-                      <div className='col-lg-12'>
-                        <div className='form_box mb-20'>
-                          <input
-                            type='email'
-                            name='email'
-                            placeholder='ایمیل*'
-                          />
-                        </div>
-                      </div>
-                      <div className='col-lg-12'>
-                        <div className='form_box mb-20'>
-                          <input
-                            type='text'
-                            name='phone'
-                            placeholder='شماره تلفن'
-                          />
-                        </div>
-                      </div>
-                      <div className='col-lg-12'>
-                        <div className='form_box mb-20'>
-                          <textarea
-                            name='message'
-                            id='message'
-                            cols={30}
-                            rows={10}
-                            placeholder='متن شما'
-                            defaultValue={""}
-                          />
-                        </div>
-                        <div className='quote_button'>
-                          <button className='btn' type='submit'>
-                            {" "}
-                            مشاوره رایگان <i className='bi bi-gear' />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <div id='status' />
-                </div>
-              </div> */}
                 <FormComponent />
               </div>
               <div className='col-lg-6 col-md-6 pl-0'>
@@ -967,155 +750,6 @@ const Landing1 = () => {
         {/*==================================================*/}
         {/* Start consen Blog Area */}
         {/*==================================================*/}
-        {/* <div className='blog-area style-two' id='blog'>
-        <div className='container'>
-          <div className='row pb-40'>
-            <div className='col-lg-5 col-md-6'>
-              <div className='consen-button text-right pt-4 pt-md-0'>
-                <Link legacyBehavior href='/blog-grid'>
-                  <a>
-                    {" "}
-                    <i className='bi bi-gear' /> همه بلاگ ها
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-7 col-md-6'>
-              <div className='consen-section-title mobile-center'>
-                <h2> تمامی خدمات مجموعه ما </h2>
-                <h2>
-                  {" "}
-                  از <span> فروش ملک </span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-lg-4 col-md-6'>
-              <div className='single-blog-box'>
-                <div className='single-blog-thumb'>
-                  <img src='assets/images/resource/blog1.png' alt />
-                  <div className='blog-top-button'>
-                    <a href='#'> GRAPHIC </a>
-                  </div>
-                </div>
-                <div className='em-blog-content'>
-                  <div className='meta-blog-text'>
-                    <p> August 25, 2023 </p>
-                  </div>
-                  <div className='em-blog-title'>
-                    <h2>
-                      {" "}
-                      <Link legacyBehavior href='/blog-details'>
-                        <a> Popular Consultants are big Meetup 2023 </a>
-                      </Link>{" "}
-                    </h2>
-                  </div>
-                  <div className='em-blog-icon'>
-                    <div className='em-blog-thumb'>
-                      <img src='assets/images/resource/blog-icon.png' alt />
-                    </div>
-                    <div className='em-blog-icon-title'>
-                      <h6> Alex Collins </h6>
-                    </div>
-                  </div>
-                  <div className='blog-button'>
-                    <Link legacyBehavior href='/blog-details'>
-                      <a>
-                        {" "}
-                        Learn More <i className='bi bi-plus' />{" "}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div className='single-blog-box'>
-                <div className='single-blog-thumb'>
-                  <img src='assets/images/resource/blog2.png' alt />
-                  <div className='blog-top-button'>
-                    <a href='#'> DEVELOPMENT </a>
-                  </div>
-                </div>
-                <div className='em-blog-content'>
-                  <div className='meta-blog-text'>
-                    <p> August 21, 2023 </p>
-                  </div>
-                  <div className='em-blog-title'>
-                    <h2>
-                      {" "}
-                      <Link legacyBehavior href='/blog-details'>
-                        <a> How to Increase Business Products Sales </a>
-                      </Link>{" "}
-                    </h2>
-                  </div>
-                  <div className='em-blog-icon'>
-                    <div className='em-blog-thumb'>
-                      <img src='assets/images/resource/blog-icon.png' alt />
-                    </div>
-                    <div className='em-blog-icon-title'>
-                      <h6> Julia Moris </h6>
-                    </div>
-                  </div>
-                  <div className='blog-button'>
-                    <Link legacyBehavior href='/blog-details'>
-                      <a>
-                        {" "}
-                        Learn More <i className='bi bi-plus' />{" "}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div className='single-blog-box'>
-                <div className='single-blog-thumb'>
-                  <img src='assets/images/resource/blog3.png' alt />
-                  <div className='blog-top-button'>
-                    <a href='#'> DESIGN </a>
-                  </div>
-                </div>
-                <div className='em-blog-content'>
-                  <div className='meta-blog-text'>
-                    <p> August 20, 2023 </p>
-                  </div>
-                  <div className='em-blog-title'>
-                    <h2>
-                      {" "}
-                      <Link legacyBehavior href='/blog-details'>
-                        <a> Top 10 Most Populars Google Chrome app</a>
-                      </Link>
-                    </h2>
-                  </div>
-                  <div className='em-blog-icon'>
-                    <div className='em-blog-thumb'>
-                      <img src='assets/images/resource/blog-icon.png' alt />
-                    </div>
-                    <div className='em-blog-icon-title'>
-                      <h6> Amantha </h6>
-                    </div>
-                  </div>
-                  <div className='blog-button'>
-                    <Link legacyBehavior href='/blog-details'>
-                      <a>
-                        {" "}
-                        Learn More <i className='bi bi-plus' />{" "}
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='blog-shape'>
-              <div className='port-shape-thumb2 bounce-animate2'>
-                <img src='assets/images/resource/all-shape6.png' alt />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
         {/*==================================================*/}
         {/* End consen Blog Area */}
         {/*==================================================*/}
@@ -1149,166 +783,3 @@ const Landing1 = () => {
   );
 };
 export default Landing1;
-{
-  /* <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <img src='assets/images/resource/team-1.jpg' alt='logo' />
-                </SwiperSlide> */
-}
-
-{
-  /* <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi2.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> David Alexon </h4>
-                          <p> MH Manager </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi3.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> Shilpa Shethy </h4>
-                          <p> CEO, Founder </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi2.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> David Alexon </h4>
-                          <p> MH Manager </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi1.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4>Philip Anthorpy</h4>
-                          <p>UI Designer</p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='pr-1'>
-                  <div className='testimonial-single-box'>
-                    <div className='testimonial-content1'>
-                      <div className='single-quote-icon'>
-                        <div className='quote-thumb'>
-                          <img src='assets/images/resource/testi2.png' alt />
-                        </div>
-                        <div className='quote-title'>
-                          <h4> David Alexon </h4>
-                          <p> MH Manager </p>
-                        </div>
-                      </div>
-                      <div className='em-testimonial-text'>
-                        <p>
-                          “Holisticly pursue market-more synerg through
-                          innovative paradi. Enthusia productivate media”.
-                        </p>
-                      </div>
-                      <div className='em-testi-start-icon'>
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-fill' />
-                        <i className='bi bi-star-half' />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide> */
-}

@@ -35,18 +35,20 @@ export default function UsersTable() {
   };
   const returnTable = () => {
     const table = (
-      <table className='table w-full' ref={tableRef}>
+      <table class='table '>
         <thead>
           <tr>
             {expertsData.header.map((item, index) => (
-              <th key={index}>{item}</th>
+              <th scope='col' key={index}>
+                {item}
+              </th>
             ))}
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
             <tr key={index}>
-              <td>{index + 1}</td>
+              <th scope='row'>{index + 1}</th>
               <td>{item.username}</td>
               <td>{item.phone}</td>
               <td>{dayjs(item.createdAt).format("YYYY/MM/DD")}</td>
@@ -54,7 +56,30 @@ export default function UsersTable() {
           ))}
         </tbody>
       </table>
+
+
+
+
+      
     );
+
+    // const table = (
+    //   <table className='table w-full' ref={tableRef}>
+    //     <thead>
+    //       <tr></tr>
+    //     </thead>
+    //     <tbody>
+    //       {data.map((item, index) => (
+    //         <tr key={index}>
+    //           <td>{index + 1}</td>
+    //           <td>{item.username}</td>
+    //           <td>{item.phone}</td>
+    //           <td>{dayjs(item.createdAt).format("YYYY/MM/DD")}</td>
+    //         </tr>
+    //       ))}
+    //     </tbody>
+    //   </table>
+    // );
     // tableRef.current = table;
     return table;
   };

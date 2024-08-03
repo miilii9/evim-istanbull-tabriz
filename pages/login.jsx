@@ -1,10 +1,9 @@
-import React from 'react'
-import Login from '@/components/organisms/forms/Login'
+import React from "react";
+import Login from "@/components/organisms/forms/Login";
 export default function page() {
   return (
-    <div className='flex flex-col justify-center items-center h-screen w-full'>
-      <h1 className='mb-12 text-3xl font-semibold'>ورود ادمین</h1>
+    <div className='container mx-auto px-4 py-10'>
       <Login />
     </div>
-  )
+  );
 }

@@ -21,7 +21,6 @@ const Contact = () => {
         message: "شماره تلفن صحیح نیست",
       }),
     email: z.string(),
-    // email: z.string().email("ایمیل نادرست است."),
     body: z.string(),
   });
   const {
@@ -129,11 +128,7 @@ const Contact = () => {
                         />
                       </div>
                     </div>
-                    {/* <div className='col-lg-6'>
-                      <div className='form_box mb-30'>
-                        <input type='text' name='web' placeholder='Website' />
-                      </div>
-                    </div> */}
+                 
                     <div className='col-lg-12'>
                       <div className='form_box mb-30'>
                         <textarea
