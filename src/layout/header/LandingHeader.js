@@ -62,7 +62,7 @@ const LandingHeader = ({ popUpHandler }) => {
             <div className='col-lg-3 '>
               <div className='logo'>
                 <Link legacyBehavior href='/'>
-                  <a className='logo_img' title='consen'>
+                  <a className='logo_img' title='evimistanbull'>
                     <Image
                       height={60}
                       width={60}
@@ -73,7 +73,7 @@ const LandingHeader = ({ popUpHandler }) => {
                   </a>
                 </Link>
                 <Link legacyBehavior href='/'>
-                  <a className='main_sticky' title='consen'>
+                  <a className='main_sticky' title='evimistanbull'>
                     <Image
                       height={80}
                       width={80}

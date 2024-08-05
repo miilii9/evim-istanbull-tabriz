@@ -29,7 +29,6 @@ const Landing1 = () => {
       <ReportView slug={"home"} />
 
       {popup && <Popup setPopup={setPopup} />}
-      <div className='slider-area slider2 d-flex align-items-center'></div>
       <Layout header={4} popUpHandler={popUpHandler}>
         <div
           className='slider-area slider2 d-flex align-items-center'

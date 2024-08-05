@@ -7634,3 +7634,6 @@ ul.social-box li a:hover {
 .dreamit-icon-list ul li {
   gap: 0.3rem;
 }
+.hideLogo {
+  display: none;
+}

@@ -3,12 +3,16 @@ a.meanmenu-reveal {
 }
 .mean-container .mean-bar {
   background: #ff3b00;
-  float: left;
+  /* float: left; */
   min-height: 60px;
   padding: 4px 0 0;
   position: relative;
   width: 100%;
   z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0rem 0.5rem 1rem;
 }
 .mean-container a.meanmenu-reveal {
   width: 22px;
@@ -181,10 +185,20 @@ a.meanmenu-reveal {
 }
 .mean-container .mean-bar::before {
   color: #fff;
-  content: "Evimistanbull-tab";
-  font-size: 28px;
+  content: "به اویم استانبول خوش امدید";
+  font-size: 16px;
   font-weight: 600;
-  left: 10px;
+  left: 81px;
   position: absolute;
-  top: 18px;
+  top: 25px;
+}
+.mean-container .mean-bar.toggleOn::before {
+  content: "";
+  display: none;
+}
+.mean-container .mean-bar.toggleOn {
+  padding: 0;
+}
+.mean-container .mean-bar.toggleOn > div {
+  width: 100%;
 }

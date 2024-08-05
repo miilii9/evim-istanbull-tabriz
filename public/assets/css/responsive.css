@@ -1411,8 +1411,10 @@
 
   .slider2.slider-area {
     height: 550px;
-    background-size: inherit;
-    background-position: inherit;
+    background: url(../images/slider/resHero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .slider2.slider-area .slider-content p,
   .slider2.slider-area .slider-content h1,
@@ -2212,8 +2214,10 @@
   .slider2 {
     height: 550px;
     text-align: center;
-    background-size: inherit;
-    background-position: inherit;
+    background: url(../images/slider/resHero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .slider2 .slider-content h1 {
@@ -3299,8 +3303,16 @@
   .slider2 {
     height: 550px;
     text-align: center;
-    background-size: inherit;
-    background-position: inherit;
+    /* background-size: inherit; */
+    /* background-position: inherit; */
+    background: url(../images/slider/resHero.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* resHero.webp */
+    height: 670px;
+    margin-top: 0rem;
+    padding: 2rem;
+    align-items: start !important;
   }
 
   .slider2 .slider-content h1 {
@@ -3580,6 +3592,10 @@
   .extra-progress {
     display: block;
     padding: 14px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   .about-shape-thumb2 {
@@ -4587,6 +4603,19 @@
 
   .blog-area.new-style {
     padding: 40px 0 50px;
+  }
+  .team_area .row {
+    gap: 1rem;
+  }
+  .team_area .single_team_icon {
+    transform: perspective(500px) rotateX(0deg);
+  }
+
+  .team_area .team-title {
+    transform: perspective(500px) rotateX(0deg);
+  }
+  .team_area .single_team_content .team-title {
+    height: 88px;
   }
 }
 
